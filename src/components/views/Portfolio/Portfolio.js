@@ -20,13 +20,13 @@ const Portfolio = () => {
 
     return (
         <div>
-            <Subtitle p={p} cursor>Here is <span className={s.green}>what</span> I <span className={s.orange}>do</span></Subtitle>
+            <Subtitle p={p} cursor>Here is <span className={s.gray}>what</span> I <span className={s.orange}>do</span></Subtitle>
             <div className={s.btn}>
                 <Button black>CONTACT</Button>
             </div>
             <div className={s.row}>
                 <div className={s.col}>
-                    <KeyPoint bar>Select a web-site</KeyPoint>
+                    <KeyPoint bar>Select a website</KeyPoint>
                     <div className={s.menu}>
                         <button onClick={() => setActive(1)} className={active === 1 && s.active}>Le Comptoir des Roses</button>
                         <button onClick={() => setActive(2)} className={active === 2 && s.active}>Marc Bourreau</button>

@@ -11,7 +11,7 @@ const Skills = () => {
     return (
         <div className={s.skills}>
             <Subtitle cursor p={p}>
-                My <span className={s.gray}>Stack</span>  as a Full-Stack <span className={s.gray}>Programmer</span>
+                My <span className={s.gray}>Stack</span>  as a Full-Stack <span className={s.orange}>Programmer</span>
             </Subtitle>
             <div className={s.btn}>
                 <Button black>CONTACT</Button>

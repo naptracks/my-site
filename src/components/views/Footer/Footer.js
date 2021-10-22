@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className={s.footer}>
             <img src={'avatar.png'} alt={'Cesar Martel'}/>
-            <Subtitle white>work with <span className={s.yellow}>me</span>.</Subtitle>
+            <Subtitle white>let's work <span className={s.yellow}>together</span>.</Subtitle>
             <div className={s.content}>
                 <Logo/>
                 <div className={s.bar}/>

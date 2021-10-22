@@ -36,10 +36,9 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className={s.content}>
-                    <a href={'https://www.lecomptoirdesroses-frejus.fr/home'}>
+                    <a href={'https://www.lecomptoirdesroses-frejus.fr/home'} target={'_blank'}>
                         <Paragraph title>Le Comptoir des Roses</Paragraph>
                     </a>
-
                     <div className={s.image}/>
 
                     <div className={s.siteProfile}>

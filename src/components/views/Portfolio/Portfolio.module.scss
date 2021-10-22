@@ -76,13 +76,12 @@
     background-size: cover;
     background-position: center;
     border-radius: 2rem;
+    //border: 1px solid $gray-border;
+    box-shadow: 0px 10px 70px 5px $cian;
   }
-  //.center {
-  //  width: 100%;
-  //  display: flex;
-  //  justify-content: center;
-  //  align-items: center;
-  //}
+  &:hover {
+
+  }
 }
 
 .siteProfile {

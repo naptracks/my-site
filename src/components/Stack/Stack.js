@@ -90,13 +90,6 @@ const Stack = () => {
                     </a>
 
                 </div>
-                <div className={s.col}>
-                    {svg.mongodb}
-                    <a href={'https://mongodb.com/'} target={'_blank'}>
-                        <p>Mongo DB</p>
-                    </a>
-
-                </div>
             </div>
 
             <KeyPoint bar>styles.</KeyPoint>

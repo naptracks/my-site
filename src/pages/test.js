@@ -1,4 +1,3 @@
-const  welcomeToMyProfile = (name, ) => {
+const  welcomeToMyProfile = ( ) => {
 
-    return `My name is {}`
 }

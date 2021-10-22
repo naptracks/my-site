@@ -1,0 +1,34 @@
+@import "../../styles/settings/_typography";
+@import "../../styles/settings/_colors";
+
+.keyPoint {
+  font-family: $font;
+  color: $black-title;
+  p {
+    line-height: 27px;
+    font-family: $font;
+    letter-spacing: 0.06rem;
+    font-size: 1.1rem;
+  }
+}
+
+.bar {
+  width: 4rem;
+  height: .25rem;
+  margin-top: 1.5rem;
+  margin-left: .25rem;
+  background-color: $black-title;
+}
+
+.white {
+ h1 {
+   color: $white;
+ }
+  p {
+    color: $gray-text
+  }
+  .bar {
+    background-color: $white;
+  }
+}
+

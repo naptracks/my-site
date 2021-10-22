@@ -1,0 +1,83 @@
+@import "../../styles/settings/_colors";
+
+.svg {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+  position: relative;
+  top: -1px;
+  margin: -4px 0;
+  transition: transform .2s;
+  transform: translateX(-5px);
+  width: 16px;
+  height: 16px;
+}
+
+.btn {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: solid 1px $white;
+  border-radius: 7px;
+  height: 50px;
+  cursor: pointer;
+  p {
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-right: 11px;
+    padding-left: 16px;
+    font-size: 15px;
+  }
+  &:hover {
+    .svg {
+      transition: transform .2s;
+      transform: translateX(3px);
+    }
+  }
+}
+
+
+
+.black {
+  background-color: $white;
+  box-shadow: inset 0 0 0 1px $cian;
+
+  p {
+      color: $cian;
+  }
+  &:hover {
+    box-shadow: inset 0 0 0 2px $cian;
+    transition: box-shadow 0.2s;
+  }
+}
+.cian {
+  background: none;
+  box-shadow: inset 0 0 0 1px $white;
+
+  p {
+      color: $white;
+  }
+  &:hover {
+    box-shadow: inset 0 0 0 2px $white;
+    transition: box-shadow 0.2s;
+  }
+}
+
+.white {
+  background-color: $white;
+    p {
+      color: $black;
+    }
+  &:hover {
+    box-shadow: 0 4px 7px rgba(0,0,0,.5),0 100px 80px hsla(0,0%,100%,.0174624),0 41.7776px 33.4221px hsla(0,0%,100%,.0235573),0 22.3363px 17.869px hsla(0,0%,100%,.0282784),0 12.5216px 10.0172px hsla(0,0%,100%,.0339075),0 6.6501px 5.32008px hsla(0,0%,100%,.04317),0 2.76726px 2.21381px hsla(0,0%,100%,.07);
+    transition: box-shadow 0.2s;
+  }
+}
+
+
+
+
+
+
+

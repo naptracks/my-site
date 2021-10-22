@@ -1,0 +1,175 @@
+@import "../../styles/settings/_colors";
+
+.ideContainer {
+  min-height: 30rem;
+  max-width: 60em;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: $dark-gray;
+  border: 1px solid $black;
+  border-radius: 20px;
+}
+
+.headerContainer {
+  max-width: 100%;
+  display: flex;
+  background-color: $light-black;
+  height: 45px;
+  border-radius: 20px 20px 0 0;
+}
+
+.blur {
+  box-shadow: 2px 1px 90px 40px $cian;
+}
+
+
+//body of the ide.
+.body {
+  padding-left: .75rem;
+  margin-top: 1rem;
+}
+
+.boxContent {
+  flex-direction: column;
+  padding-bottom: 8px;
+  display: flex;
+  width: 100%;
+}
+
+.lineCol {
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+  margin-right: 12px;
+  height: 25px;
+}
+
+.lineNumber {
+  text-align: right;
+  color: $code;
+  vertical-align: middle;
+  width: 30px;
+  margin-right: 12px;
+}
+
+// gives the behavior and the right color on the code text
+.code {
+  font-size: 16px;
+  color: $code;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing .78s steps(30, end) forwards;
+  width: 0;
+  max-width: fit-content;
+}
+
+.spaceBar {
+  border-right: .15em solid $code;
+}
+// text animation
+@keyframes typing {
+  from {width: 0}
+  to {width: 98% }
+}
+
+// margin on code text. 3 size of margin: s, m, l.
+.tabS {
+  text-indent: 20px;
+  margin: 0;
+}
+
+.tabM {
+  text-indent: 30px;
+  margin: 0;
+}
+
+.tabL {
+  text-indent: 40px;
+  margin: 0;
+}
+
+
+//Code colors
+.purple {
+  color: $code-purple;
+}
+
+.green {
+  color: $code-green;
+}
+
+.yellow {
+  color: $code-yellow;
+}
+
+.blue {
+  color: $code-blue;
+}
+
+.orange {
+  color: $code-orange;
+}
+
+.icon {
+  color: $code;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+//Tab Styles
+.tabUsedWithRadius {
+  background-color: $dark-gray;
+  padding: .7rem 1rem;
+  margin: 0;
+  border-right: 1px solid $black;
+  border-bottom: 1px solid $code-yellow;
+  border-left: none;
+  border-top: none;
+  border-top-left-radius: 20px;
+}
+
+.tabUsed {
+  background-color: $dark-gray;
+  padding: .7rem 1rem;
+  margin: 0;
+  border-right: 1px solid $black;
+  border-bottom: 1px solid $code-yellow;
+  border-left: none;
+  border-top: none;
+}
+.tabWithRadius {
+  padding: .7rem 1rem;
+  margin: 0;
+  border-right: 1px solid $black;
+  border-bottom: 1px solid $black;
+  border-top: none;
+  border-left: none;
+  background-color: $light-black;
+  border-top-left-radius: 20px;
+  &:hover {
+    background-color: $dark-gray;
+  }
+}
+.tab {
+  padding: .7rem 1rem;
+  margin: 0;
+  border-right: 1px solid $black;
+  border-bottom: 1px solid $black;
+  border-top: none;
+  border-left: none;
+  background-color: $light-black;
+  &:hover {
+  background-color: $dark-gray;
+  }
+}
+
+.tabContent {
+  color: $code;
+  display: inline;
+  padding-left: .5rem;
+}
+

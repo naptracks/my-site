@@ -1,0 +1,66 @@
+@import "../../styles/settings/_typography";
+@import "../../styles/settings/_colors";
+
+.subtitle {
+  font-family: $font;
+  color: $black-title;
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  padding-top: 5rem;
+  margin-top: 2rem;
+  letter-spacing: -.07em;
+}
+
+.center {
+  text-align: center;
+  p {
+    font-size: 24px;
+    color: $gray-text;
+    line-height: 37px;
+    letter-spacing: .07rem;
+  }
+  .white {
+    p {
+      color: $gray !important;
+    }
+  }
+}
+
+.white {
+  color: $white,
+}
+
+.spaceBar {
+  overflow: hidden;
+  margin-right: -.25rem;
+  margin-left: .25rem;
+  margin-top: .25rem;
+  white-space: nowrap;
+  animation: animated-cursor 600ms steps(30, end) infinite;
+}
+
+@keyframes animated-cursor {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+.pic {
+  width: 7em;
+  border-radius: 10px;
+  margin-top: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+

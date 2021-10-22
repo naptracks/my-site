@@ -1,0 +1,43 @@
+@import "../../styles/settings/_colors";
+
+.logo {
+color: $white;
+  letter-spacing: 3px;
+  display: flex;
+
+}
+
+.yellow {
+  color: $code-yellow;
+}
+
+.green {
+  color: $code-green;
+}
+
+.status{
+  background-color: $code-green;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin: .9rem 1.2rem 0 1.2rem;
+  animation: animated-status 1200ms steps(30, end) infinite;
+}
+
+@keyframes animated-status {
+  0% {
+    opacity: 1;
+
+  }
+  50% {
+    opacity: 0;
+
+
+  }
+  100% {
+    opacity: 1;
+
+
+  }
+}
+

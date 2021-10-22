@@ -1,7 +1,13 @@
+
+@import '../../../styles/settings/_colors';
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 6rem;
   margin-top: 3rem;
+}
+
+.yellow {
+  color: $code-yellow;
 }

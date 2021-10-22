@@ -1,0 +1,30 @@
+@import "../../styles/settings/_colors";
+@import "../../styles/settings/_typography";
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  max-width: 17em;
+  margin: 0.50rem 2rem 2rem 2rem;
+h1 {
+  font-family: $font;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $black-title;
+  letter-spacing: -.05rem;
+  padding-bottom: .75rem;
+}
+  .title {
+    font-size: 2rem;
+
+  }
+  p {
+    font: $font;
+    line-height: 1.6rem;
+    color: $gray-text;
+  }
+}
+
+.wide {
+  min-width: 100% !important;
+}

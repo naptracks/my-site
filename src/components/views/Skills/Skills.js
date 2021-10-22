@@ -1,5 +1,7 @@
 import s from './Skills.module.scss'
-import Subtitle from "../Subtitle";
+import Subtitle from "../../Subtitle";
+import Stack from "../../Stack";
+import Button from "../../Button";
 
 const Skills = () => {
 
@@ -11,7 +13,10 @@ const Skills = () => {
             <Subtitle cursor p={p}>
                 My <span className={s.gray}>Stack</span>  as a Full-Stack <span className={s.gray}>Programmer</span>
             </Subtitle>
-
+            <div className={s.btn}>
+                <Button black>CONTACT</Button>
+            </div>
+            <Stack/>
         </div>
     )
 }

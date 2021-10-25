@@ -14,9 +14,9 @@ import Surfer from "../components/Surfer";
 
 
 
-export default function Home({isAvailable}) {
+export default function Home() {
 
-    console.log(isAvailable)
+    // console.log(isAvailable)
 
     //
     // const refMain = useRef();
@@ -74,13 +74,13 @@ export default function Home({isAvailable}) {
 }
 
 
-
-export async function getServerSideProps() {
-
-    const isAvailable = await getStatus()
-
-    return {
-        props: {isAvailable}
-    }
-
-}
+//
+// export async function getServerSideProps() {
+//
+//     const isAvailable = await getStatus()
+//
+//     return {
+//         props: {isAvailable}
+//     }
+//
+// }

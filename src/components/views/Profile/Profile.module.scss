@@ -24,6 +24,24 @@
     h1 {
       color: $code-yellow
     }
+    .highlight {
+      color: $code-yellow;
+      font-size: 1.13rem;
+      animation: lighting .5s linear;
+    }
+  }
+}
+
+@keyframes lighting {
+from {
+    font-weight: inherit;
+    color: inherit;
+  font-size: inherit;
+  }
+  to {
+    color: $code-yellow;
+    font-weight: 300;
+    font-size: 1.13rem;
   }
 }
 
@@ -42,3 +60,4 @@
   margin-bottom: 6rem;
   margin-top: 3rem;
 }
+

@@ -17,79 +17,23 @@ async function fetchAPI(query, {variables} = {}) {
         return json.data
 }
 
-export async function getAllPosts(preview) {
+export async function getStatus(preview) {
     console.log(preview)
     const data = await fetchAPI(
         `
-        query AllPosts {
-        posts(first: 20, where: { orderby: {field: DATE, order: DESC}}) {
-            edges {
-                node {
-                    id
-                    date
-                    title
-                    slug
-                    extraPostInfo {
-                        authorExcerpt
-                        thumbImage {
-                            mediaItemUrl
-                        }
-                    }
-                }
+        query Status {
+          pages {
+            nodes {
+              isAvailableStatus {
+                isAvailable
+              }
             }
+          }
         }
         `
     );
-    return data?.posts;
+    return data?.pages.nodes[0].isAvailableStatus.isAvailable;
 }
 
-export async function getAllPostsWithSlug() {
-    const data = await fetchAPI(
-        `
-        {
-            posts(first: 10000) {
-                edges {
-                    node {
-                        slug
-                    }
-                }
-            }
-        }
-        `
-    );
-    return data?.posts;
-}
 
-export async function getPost(slug) {
-    const data = await fetchAPI(
-        //GraphQL fragments give us the ability to break larger, more complex queries into smaller, reusable parts.
-        `
-        fragment PostFields on Post {
-            title
-            excerpt
-            slug
-            date
-            featuredImage {
-                node {
-                    sourceUrl
-                }
-            }
-        }
-        
-        query PostBySlug($id: ID!, $idType: PostIdType!) {
-            post(id: $id, idType: $idType) {
-                ...PostFields
-                content
-            }
-         }        
-         `,
-        {
-            variables: {
-                id: slug,
-                idType: 'SLUG'
-            }
-        }
-    );
 
-    return data;
-}

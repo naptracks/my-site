@@ -9,7 +9,7 @@ const Portfolio = () => {
 
     const [active, setActive] = useState(1)
 
-    const p ="Having worked in the exciting live music environment, I developed a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation."
+    const p = <p>Having worked in the exciting <span className={s.highlight}> live music environment </span>, I developed a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.</p>
 
     // const displaySite = (value, name) => {
     //     return <button onClick={() => setActive(value)} className={active === value && s.active}>{name}</button>
@@ -20,13 +20,13 @@ const Portfolio = () => {
 
     return (
         <div>
-            <Subtitle p={p} cursor>Here is <span className={s.gray}>what</span> I <span className={s.orange}>do</span></Subtitle>
+            <Subtitle p={p} cursor>Here is <span className={s.orange}>what</span> I <span className={s.orange}>do</span></Subtitle>
             <div className={s.btn}>
                 <Button black>CONTACT</Button>
             </div>
             <div className={s.row}>
                 <div className={s.col}>
-                    <KeyPoint bar>Select a website</KeyPoint>
+                    <KeyPoint bar>Select a <span className={s.orange}> website</span></KeyPoint>
                     <div className={s.menu}>
                         <button onClick={() => setActive(1)} className={active === 1 && s.active}>Le Comptoir des Roses</button>
                         <button onClick={() => setActive(2)} className={active === 2 && s.active}>Marc Bourreau</button>
@@ -36,11 +36,11 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className={s.content}>
+
+                    <div className={s.image}/>
                     <a href={'https://www.lecomptoirdesroses-frejus.fr/home'} target={'_blank'}>
                         <Paragraph title>Le Comptoir des Roses</Paragraph>
                     </a>
-                    <div className={s.image}/>
-
                     <div className={s.siteProfile}>
                         <Paragraph p={p}>Specifications</Paragraph>
                         <Paragraph p={p}>Specifications</Paragraph>

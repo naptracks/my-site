@@ -29,10 +29,16 @@
   padding-right: 2rem;
   border-right: $gray-border 1px solid;
   padding-bottom: 4rem;
+  position: sticky;
+  top: 15%;
+  z-index: 2;
 }
 
 .row {
   display: flex;
+  padding-top: 5rem;
+  position: relative;
+  align-items: flex-start;
 }
 
 .menu {
@@ -61,6 +67,7 @@
 }
 
 .content {
+  position: inherit;
   display: flex;
   flex-wrap: wrap;
   min-width: 60%;
@@ -79,10 +86,8 @@
     //border: 1px solid $gray-border;
     box-shadow: 0 10px 70px -15px $cian;
   }
-  &:hover {
-
-  }
 }
+
 
 .siteProfile {
   display: flex;

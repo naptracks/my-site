@@ -1,0 +1,42 @@
+@import '../../styles/settings/_colors';
+
+
+.van {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: -4em;
+  //justify-content: flex-start;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0 ;
+  z-index: 10;
+  //background-color: $white;
+  svg {
+    fill: $dark;
+    width: 10em;
+    height: 10em;
+  }
+  .text {
+    overflow: hidden;
+
+    position: absolute;
+    top: 2em;
+    left: 30%;
+    z-index: 1;
+    width: 30%;
+    h1 {
+      white-space: nowrap;
+    }
+  }
+
+}
+
+.surferContainer {
+  svg {
+    transform: scaleX(1);
+    //overflow: hidden;
+
+  }
+}
+

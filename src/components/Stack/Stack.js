@@ -10,7 +10,7 @@ const Stack = () => {
     return (
         <div className={s.stack}>
 
-            <KeyPoint bar>frameworks.</KeyPoint>
+            <KeyPoint bar>frameworks<span className={s.orange}>.</span></KeyPoint>
             <div className={s.content}>
                 <div className={s.col}>
                     {svg.reactjs}
@@ -24,7 +24,7 @@ const Stack = () => {
                 </div>
             </div>
 
-            <KeyPoint bar>languages.</KeyPoint>
+            <KeyPoint bar>languages<span className={s.orange}>.</span></KeyPoint>
             <div className={s.content}>
                 <div className={s.col}>
                     {svg.js}
@@ -41,7 +41,7 @@ const Stack = () => {
 
             </div>
 
-            <KeyPoint bar>backend.</KeyPoint>
+            <KeyPoint bar>backend<span className={s.orange}>.</span></KeyPoint>
             <div className={s.content}>
                 <div className={s.col}>
                     {svg.nodejs}
@@ -67,7 +67,7 @@ const Stack = () => {
 
 
             </div>
-            <KeyPoint bar>hosting.</KeyPoint>
+            <KeyPoint bar>hosting<span className={s.orange}>.</span></KeyPoint>
             <div className={s.content}>
                 <div className={s.col}>
                     {svg.aws}
@@ -92,7 +92,7 @@ const Stack = () => {
                 </div>
             </div>
 
-            <KeyPoint bar>styles.</KeyPoint>
+            <KeyPoint bar>styles<span className={s.orange}>.</span></KeyPoint>
             <div className={s.content}>
                 <div className={s.col}>
                     {svg.sass}
@@ -118,7 +118,7 @@ const Stack = () => {
 
             </div>
 
-            <KeyPoint bar>tools.</KeyPoint>
+            <KeyPoint bar>tools<span className={s.orange}>.</span></KeyPoint>
             <div className={s.content}>
                 <div className={s.col}>
                     {svg.git}

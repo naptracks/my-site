@@ -30,6 +30,11 @@ const IDE = ({blur}) => {
         [s.spaceBar]: true
     })
 
+    const lastLine = cn ( {
+        [s.code]: true,
+        [s.spaceBarBlinking]: true,
+    })
+
     const onClick = (active) => {
         setActive(active)
         setAnim(1)

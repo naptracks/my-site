@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 const Socials = ({small}) => {
 
-    const styles = cn ( {
+    const styles = cn({
         [s.social]: true,
         [s.small]: small,
     })

@@ -11,9 +11,6 @@ import {getProjectOne, getProjectTwo, getProjectThree, getProjectFour, getProjec
 import {useProject} from "../hooks/useProject";
 
 
-
-
-
 export default function Home({isAvailable, projectOne, projectTwo, projectThree, projectFour, projectFive}) {
 
     const pOne = useProject(projectOne)
@@ -29,38 +26,35 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
 
 
     return (
-      <>
-          <Head>
-            <title>Cesar Martel</title>
-              <meta lang='eng' name="viewport" content="initial-scale=1.0, width=device-width" />
-              <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-                      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
-                            rel="stylesheet"/>
-          </Head>
-          <main>
-              <Container isDark={true}>
-                  <Header data={dataUpdated.header} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr} />
-              </Container>
-              <Container>
-                  <Skills data={dataUpdated.skills}/>
-              </Container>
-              <Container isDark={true}>
-                  <Profile data={dataUpdated.profile}/>
-              </Container>
-              <Container>
-                  <Portfolio projects={projectTab} data={dataUpdated.portfolio} lang={lang}/>
-              </Container>
-              <Container footer isDark={true}>
-                  <Footer data={dataUpdated.footer} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
-              </Container>
-          </main>
-
-      </>
-
-  )
+        <>
+            <Head>
+                <title>Cesar Martel</title>
+                <meta lang='eng' name="viewport" content="initial-scale=1.0, width=device-width"/>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+                <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
+                      rel="stylesheet"/>
+            </Head>
+            <main>
+                <Container isDark={true}>
+                    <Header data={dataUpdated.header} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
+                </Container>
+                <Container>
+                    <Skills data={dataUpdated.skills}/>
+                </Container>
+                <Container isDark={true}>
+                    <Profile data={dataUpdated.profile}/>
+                </Container>
+                <Container>
+                    <Portfolio projects={projectTab} data={dataUpdated.portfolio} lang={lang}/>
+                </Container>
+                <Container footer isDark={true}>
+                    <Footer data={dataUpdated.footer} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
+                </Container>
+            </main>
+        </>
+    )
 }
-
 
 
 export async function getStaticProps() {

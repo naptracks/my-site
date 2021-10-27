@@ -6,7 +6,7 @@ import {techno} from '../Stack/Stack';
 const Paragraph = ({children, p, wide, title, svgTab}) => {
 
     const tab = svgTab ? svgTab.map(name => ImportSvg(name)) : null
-    const styles = cn ({
+    const styles = cn({
         [s.paragraph]: true,
         [s.wide]: wide,
         [s.title]: title

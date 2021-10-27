@@ -6,10 +6,10 @@ const Subtitle = ({children, cursor, p, white, img}) => {
     const subtitle = cn({
         [s.subtitle]: true,
         [s.white]: white,
-        [s.center]:true
+        [s.center]: true
     })
     const spaceBar = cn({
-        [s.spaceBar]:true,
+        [s.spaceBar]: true,
         [s.white]: white
     })
 
@@ -21,11 +21,10 @@ const Subtitle = ({children, cursor, p, white, img}) => {
                 <h1 className={subtitle}>
                     {children}
                     {
-                        cursor &&  <span className={spaceBar}>_</span>
+                        cursor && <span className={spaceBar}>_</span>
                     }
                 </h1>
             </div>
-
             {
                 p && <p>{p}</p>
             }

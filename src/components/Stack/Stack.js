@@ -4,13 +4,11 @@ import {svg} from '../../data/svg';
 import color from '../../styles/colors.module.scss';
 
 
-export const techno = (svg, name, href ) => {
-
+export const techno = (svg, name, href) => {
     return <div className={s.col}>
         {svg}
-        <a href={href} target={'_blank'}><p>{name}</p> </a>
+        <a href={href} target={'_blank'}><p>{name}</p></a>
     </div>
-
 }
 
 const Stack = () => {

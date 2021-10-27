@@ -1,7 +1,5 @@
 const API_URL = process.env.WP_API_URL
 
-
-
 async function fetchAPI(query, {variables} = {}) {
     const headers = {'Content-Type': 'application/json'};
     const res = await fetch(API_URL, {
@@ -16,7 +14,7 @@ async function fetchAPI(query, {variables} = {}) {
         console.log('error details', query, variables);
         throw new Error('Failed to fetch API');
     }
-        return json.data
+    return json.data
 }
 
 

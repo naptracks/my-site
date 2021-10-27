@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 const KeyPoint = ({children, white, bar, p}) => {
 
-    const styles = cn ({
+    const styles = cn({
         [s.keyPoint]: true,
         [s.white]: white
     })
@@ -11,7 +11,7 @@ const KeyPoint = ({children, white, bar, p}) => {
     return (
         <div className={styles}>
             <h1>{children}</h1>
-            { bar && <div className={s.bar}></div>}
+            {bar && <div className={s.bar}></div>}
             {p && <p>{p}</p>}
         </div>
     )

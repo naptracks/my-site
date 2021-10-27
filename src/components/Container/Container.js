@@ -4,7 +4,7 @@ import cn from 'classnames'
 const Container = (props) => {
 
     const {children, isDark, footer, className, style} = props
-    const dark = cn ({
+    const dark = cn({
         [s.dark]: isDark,
     })
     const container = cn({
@@ -14,7 +14,7 @@ const Container = (props) => {
     })
 
     return (
-        <div className={dark} >
+        <div className={dark}>
             <div className={container} style={style}>
                 {children}
             </div>

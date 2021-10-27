@@ -1,7 +1,6 @@
-
 export const useProject = (data) => {
     let tab = [];
-    for(const key in data) {
+    for (const key in data) {
         tab.push(data[key])
     }
     return new Object({
@@ -19,13 +18,13 @@ export const useProject = (data) => {
                 title: tab[6],
                 p: tab[7],
             },
-            specsTwo:{
+            specsTwo: {
                 title: tab[8],
                 p: tab[9]
             }
         },
         fr: {
-            specsOne:{
+            specsOne: {
                 title: tab[10],
                 p: tab[11],
             },

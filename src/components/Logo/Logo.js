@@ -17,7 +17,7 @@ const Logo = ({status}) => {
             <div className={styles}></div>
             {
                 status === 'ACTUALLY BUSY' || status === 'ACTUELLEMENT OCCUPÉ' ?
-                <h3 className={color.orange}>{status}</h3>
+                    <h3 className={color.orange}>{status}</h3>
                     :
                     <h3 className={color.green}>{status}</h3>
             }

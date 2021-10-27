@@ -17,3 +17,26 @@ const Surfer = (anim) => {
 }
 
 export default Surfer
+
+
+//draft
+// console.log(isAvailable)
+
+//
+// const refMain = useRef();
+// const [anim, setAnim] = useState({})
+// useLayoutEffect(() => {
+//     window.addEventListener('scroll', onScroll)
+//     return () => window.removeEventListener('scroll', onScroll)
+// })
+// const onScroll = () => {
+
+//     const top = refMain.current.getBoundingClientRect().top
+//     const scrollRef = top + 3500;
+//     const width = (scrollRef) * -1.8
+//     if(top <= -3500 && top >= -4500) {
+//         setAnim({
+//             transform: `translateX(${width}px)`,
+//         })
+//     }
+// }

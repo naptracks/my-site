@@ -4,15 +4,15 @@ import Button from "../../Button";
 import Subtitle from "../../Subtitle";
 import Socials from "../../Socials";
 
-const Footer = () => {
+const Footer = ({data, status}) => {
 
     const date = new Date();
     return (
         <div className={s.footer}>
             <img src={'avatar.png'} alt={'Cesar Martel'}/>
-            <Subtitle white>let's work <span className={s.yellow}>together</span>.</Subtitle>
+            <Subtitle white>{data.subtitle}</Subtitle>
             <div className={s.content}>
-                <Logo/>
+                <Logo status={status}/>
                 <div className={s.bar}/>
                 <Button cian>CONTACT</Button>
             </div>

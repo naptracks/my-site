@@ -1,17 +1,7 @@
 @import '../../../styles/settings/_colors';
 @import '../../../styles/settings/_typography';
 
-.gray {
-  color: $gray
-}
 
-.orange {
-  color: $code-orange
-}
-
-.green {
-  color: $code-green;
-}
 
 .btn {
   display: flex;
@@ -83,11 +73,20 @@
     background-size: cover;
     background-position: center;
     border-radius: 2rem;
-    //border: 1px solid $gray-border;
     box-shadow: 0 10px 70px -15px $cian;
   }
 }
 
+.link {
+  display: inherit;
+  svg {
+    margin-top: .45rem;
+    width: 2rem;
+    height: 2rem;
+    fill: $code-orange
+  }
+
+}
 
 .siteProfile {
   display: flex;

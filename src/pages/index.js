@@ -5,37 +5,27 @@ import Skills from "../components/views/Skills";
 import Profile from "../components/views/Profile";
 import Portfolio from "../components/views/Portfolio";
 import Footer from "../components/views/Footer";
-import {useLayoutEffect, useRef, useState} from "react";
-import {svg} from "../data/svg";
-import s from '../styles/Home.module.scss';
-import KeyPoint from "../components/KeyPoint/KeyPoint";
-import {getStatus} from "../lib/api";
-import Surfer from "../components/Surfer";
+import {useLang} from "../lib/LangContext";
+import {data, status} from '../data/data';
+import {getProjectOne, getProjectTwo, getProjectThree, getProjectFour, getProjectFive, getStatus} from "../lib/api";
+import {useProject} from "../hooks/useProject";
 
 
 
-export default function Home() {
 
-    // console.log(isAvailable)
 
-    //
-    // const refMain = useRef();
-    // const [anim, setAnim] = useState({})
-    // useLayoutEffect(() => {
-    //     window.addEventListener('scroll', onScroll)
-    //     return () => window.removeEventListener('scroll', onScroll)
-    // })
-    // const onScroll = () => {
+export default function Home({isAvailable, projectOne, projectTwo, projectThree, projectFour, projectFive}) {
 
-    //     const top = refMain.current.getBoundingClientRect().top
-    //     const scrollRef = top + 3500;
-    //     const width = (scrollRef) * -1.8
-    //     if(top <= -3500 && top >= -4500) {
-    //         setAnim({
-    //             transform: `translateX(${width}px)`,
-    //         })
-    //     }
-    // }
+    const pOne = useProject(projectOne)
+    const pTwo = useProject(projectTwo)
+    const pThree = useProject(projectThree)
+    const pFour = useProject(projectFour)
+    const pFive = useProject(projectFive)
+    const projectTab = [pOne, pTwo, pThree, pFour, pFive]
+
+    const lang = useLang();
+    const dataUpdated = lang === 'eng' ? data.eng : data.fr
+    const statusUpdated = isAvailable ? status.available : status.busy
 
 
     return (
@@ -51,20 +41,19 @@ export default function Home() {
           </Head>
           <main >
               <Container isDark={true}>
-                  <Header/>
+                  <Header data={dataUpdated.header} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr} />
               </Container>
               <Container>
-                  <Skills/>
+                  <Skills data={dataUpdated.skills}/>
               </Container>
-              {/*<Surfer anim={anim}/>*/}
               <Container isDark={true}>
-                  <Profile/>
+                  <Profile data={dataUpdated.profile}/>
               </Container>
               <Container>
-                  <Portfolio/>
+                  <Portfolio projects={projectTab} data={dataUpdated.portfolio} lang={lang}/>
               </Container>
               <Container footer isDark={true}>
-                  <Footer/>
+                  <Footer data={dataUpdated.footer} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
               </Container>
           </main>
 
@@ -74,13 +63,26 @@ export default function Home() {
 }
 
 
-//
-// export async function getServerSideProps() {
-//
-//     const isAvailable = await getStatus()
-//
-//     return {
-//         props: {isAvailable}
-//     }
-//
-// }
+
+export async function getStaticProps() {
+
+
+    const isAvailable = await getStatus()
+    const projectOne = await getProjectOne()
+    const projectTwo = await getProjectTwo()
+    const projectThree = await getProjectThree()
+    const projectFour = await getProjectFour()
+    const projectFive = await getProjectFive()
+
+    return {
+        props: {
+            isAvailable,
+            projectOne,
+            projectTwo,
+            projectThree,
+            projectFour,
+            projectFive
+        }
+    }
+
+}

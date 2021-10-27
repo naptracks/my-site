@@ -5,12 +5,12 @@ import IDE from "../../IDE";
 import Button from "../../Button";
 import Socials from "../../Socials";
 
-export const Header = () => {
+export const Header = ({data, status}) => {
 
     return (
         <>
-            <Nav/>
-            <Title p={'React JS, Next JS, GraphQL, REST API, Material UI'}>Web<span className={s.yellow}> Developer</span></Title>
+            <Nav data={data.nav} status={status}/>
+            <Title p={data.title.p}>{data.title.h1}</Title>
             <Socials/>
            <div className={s.btn}>
                <Button white>CONTACT</Button>

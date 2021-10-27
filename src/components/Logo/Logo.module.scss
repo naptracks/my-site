@@ -7,16 +7,21 @@ color: $white;
 
 }
 
-.yellow {
-  color: $code-yellow;
-}
+.available {
+  background-color: $code-green ;
+  h3 {
+    color: $code-green;
+  }
 
-.green {
-  color: $code-green;
+}
+.busy {
+  background-color: $code-orange ;
+  h3 {
+    color: $code-orange;
+  }
 }
 
 .status{
-  background-color: $code-green;
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
@@ -36,8 +41,6 @@ color: $white;
   }
   100% {
     opacity: 1;
-
-
   }
 }
 

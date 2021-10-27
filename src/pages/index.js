@@ -81,7 +81,7 @@ export async function getStaticProps() {
             projectThree,
             projectFour,
             projectFive
-        }
+        },
+        revalidate: 1
     }
-
 }

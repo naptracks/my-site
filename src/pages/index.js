@@ -32,14 +32,13 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
       <>
           <Head>
             <title>Cesar Martel</title>
-              <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+              <meta lang='eng' name="viewport" content="initial-scale=1.0, width=device-width" />
               <link rel="preconnect" href="https://fonts.googleapis.com"/>
                   <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
                       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
                             rel="stylesheet"/>
-              <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet"/>
           </Head>
-          <main >
+          <main>
               <Container isDark={true}>
                   <Header data={dataUpdated.header} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr} />
               </Container>

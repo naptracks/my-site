@@ -5,8 +5,6 @@ import Button from "../../Button";
 
 const Skills = ({data}) => {
 
-
-
     return (
         <div className={s.skills}>
             <Subtitle cursor p={data.p}>

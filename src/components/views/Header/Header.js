@@ -16,7 +16,6 @@ export const Header = ({data, status}) => {
                <Button white>CONTACT</Button>
            </div>
             <IDE blur />
-
         </>
     )
 }

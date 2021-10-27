@@ -26,7 +26,7 @@ const Profile = ({data}) => {
                     <KeyPoint p={data.skillTwo.p} white>{svg.iconSkill3} {data.skillTwo.keyPoint}</KeyPoint>
                 </div>
                 <div className={s.ability}>
-                    <KeyPoint p={data.skillTwo.p} white>{svg.iconSkill2} {data.skillThree.keyPoint}</KeyPoint>
+                    <KeyPoint p={data.skillThree.p} white>{svg.iconSkill2} {data.skillThree.keyPoint}</KeyPoint>
                 </div>
             </div>
 

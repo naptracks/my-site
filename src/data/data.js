@@ -85,9 +85,6 @@ export const data = {
             subtitle: <>Here is <span className={color.orange}>what</span> I <span className={color.orange}>do</span></>,
             p: <><p>Having worked in the exciting live music environment, I developed a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.</p></>,
             keyPoint: <>Select a <span className={color.orange}> website</span></>,
-            project: {
-
-            }
         },
         footer: {
             subtitle: <>let's work <span className={color.yellow}>together</span>.</>,

@@ -47,16 +47,15 @@ const ContactPage = ({isAvailable, location}) => {
 }
 
 export default ContactPage;
-//
-// export async function getStaticProps() {
-//     const isAvailable = await getStatus()
-//     const location = await getLocation()
-//
-//     return {
-//         props: {
-//             isAvailable,
-//             location
-//         },
-//         revalidate: 1,
-//     }
-// }
+
+export async function getStaticProps() {
+    const isAvailable = await getStatus()
+    const location = await getLocation()
+
+    return {
+        props: {
+            isAvailable,
+            location
+        },
+    }
+}

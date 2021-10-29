@@ -1,11 +1,11 @@
-@import "../../../styles/settings/_colors";
+@import "../../../../styles/settings/colors";
 
 .footer {
 display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 2rem;
 
   span {
     color: $code-yellow;

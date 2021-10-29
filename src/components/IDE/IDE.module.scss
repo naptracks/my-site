@@ -54,7 +54,7 @@
   margin-right: 12px;
 }
 
-// gives the behavior and the right color on the code text
+// gives the behavior on the code text
 .code {
   font-size: 16px;
   color: $code;
@@ -76,43 +76,6 @@
   to {width: 98% }
 }
 
-// margin on code text. 3 size of margin: s, m, l.
-.tabS {
-  text-indent: 20px;
-  margin: 0;
-}
-
-.tabM {
-  text-indent: 30px;
-  margin: 0;
-}
-
-.tabL {
-  text-indent: 40px;
-  margin: 0;
-}
-
-
-//Code colors
-.purple {
-  color: $code-purple;
-}
-
-.green {
-  color: $code-green;
-}
-
-.yellow {
-  color: $code-yellow;
-}
-
-.blue {
-  color: $code-blue;
-}
-
-.orange {
-  color: $code-orange;
-}
 
 .icon {
   color: $code;

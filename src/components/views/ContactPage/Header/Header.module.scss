@@ -1,0 +1,45 @@
+@import '../../../../styles/settings/colors';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 540px;
+  height: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  border-left: 1px solid $gray-border;
+  h1 {
+    padding-bottom: 2.2rem;
+  }
+  svg {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    fill: $code-orange;
+    margin-right: 2.2rem;
+
+  }
+
+}
+
+.formContainer {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  &:hover {
+    h1 {
+      color: $code-yellow !important;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+

@@ -2,11 +2,12 @@ import s from './Socials.module.scss';
 import {svg} from "../../data/svg";
 import cn from 'classnames'
 
-const Socials = ({small}) => {
+const Socials = ({small, orange}) => {
 
     const styles = cn({
         [s.social]: true,
         [s.small]: small,
+        [s.orange]: orange
     })
 
     return (

@@ -14,7 +14,6 @@ const IDE = ({blur}) => {
         return () => clearInterval(time)
     }, [active])
 
-
     const styles = cn({
         [s.ideContainer]: true,
         [s.blur]: blur
@@ -29,7 +28,13 @@ const IDE = ({blur}) => {
         setAnim(1)
     }
 
-    const code = (lineNumber, code) => <code className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
+    const code = (lineNumber, code, margin) => {
+        if(code.length === 0) return;
+        if(margin === 1) return <code style={tabS} className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
+         else if(margin === 2) return <code style={tabM} className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
+         else if(margin === 3) return <code style={tabL} className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
+        return <code className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
+    }
 
     const bodyOf = (page) => <div className={s.body}>
         <div className={s.boxContent}>
@@ -41,12 +46,11 @@ const IDE = ({blur}) => {
                                 <div className={s.lineNumber}>
                                     {lineNumber}
                                 </div>
-                                {anim >= lineNumber && code(lineNumber, c.line)}
+                                {anim >= lineNumber && code(lineNumber, c.line, c.margin)}
                             </div>
                     )
                 })
             }
-
         </div>
     </div>
 
@@ -79,3 +83,19 @@ const IDE = ({blur}) => {
 
 export default IDE;
 
+
+// margin on code text. 3 sizes of margin: s, m, l.
+const tabS = {
+    textIndent: '20px',
+    margin: '0'
+}
+
+const tabM = {
+    textIndent: '30px',
+    margin: '0'
+}
+
+const tabL = {
+    textIndent: '40px',
+    margin: '0'
+}

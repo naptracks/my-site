@@ -8,15 +8,42 @@
   max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
+  //background-color: $white;
 }
 
 
 .dark {
-  background-color: $dark;
+  background-color: $dark !important;
+  color: $white !important;
+  fill: $white;
+}
+
+.white {
+  background-color: $white;
+}
+
+.radius {
+  border-top-left-radius: 5rem ;
+  border-top-right-radius: 5rem;
+  //border-radius: 5rem;
+  box-shadow: 0 0 30px 20px $cian;
+}
+
+.fullRadius {
+  border-radius: 5rem;
+  box-shadow: 0 0 30px 20px $cian;
+}
+
+.darkContact {
+  background: $dark-contact-transparent;
   color: $white !important;
   fill: $white;
 }
 
 .footer {
   padding-bottom: 1rem !important;
+}
+
+.navbar {
+  padding-bottom: 0.75rem !important;
 }

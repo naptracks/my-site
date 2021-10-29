@@ -29,3 +29,11 @@
     margin: 0 1rem 0 0;
   }
 }
+
+.orange {
+ svg {
+     &:hover {
+       fill: $code-orange !important;
+     }
+  }
+}

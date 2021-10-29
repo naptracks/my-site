@@ -1,9 +1,10 @@
+import Link from "next/link";
 import s from './Profile.module.scss';
-import Subtitle from "../../Subtitle";
-import KeyPoint from "../../KeyPoint/KeyPoint";
-import {svg} from '../../../data/svg';
-import Button from "../../Button";
-import Socials from "../../Socials";
+import Subtitle from "../../../Subtitle";
+import KeyPoint from "../../../KeyPoint/KeyPoint";
+import {svg} from '../../../../data/svg';
+import Button from "../../../Button";
+import Socials from "../../../Socials";
 
 
 const Profile = ({data}) => {
@@ -16,7 +17,10 @@ const Profile = ({data}) => {
             </Subtitle>
             <Socials/>
             <div className={s.btn}>
-                <Button white>CONTACT</Button>
+                <Link href={'/contact'}>
+                    <Button white>CONTACT</Button>
+                </Link>
+
             </div>
             <div className={s.skillSet}>
                 <div className={s.ability}>

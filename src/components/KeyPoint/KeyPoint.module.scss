@@ -4,6 +4,9 @@
 .keyPoint {
   font-family: $font;
   color: $cian;
+  h1 {
+    width: fit-content;
+  }
   p {
     line-height: 27px;
     font-family: $font;

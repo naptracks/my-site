@@ -20,7 +20,7 @@ const Button = ({children, white, black, onClick, cian}) => {
 
 
     return (
-        <button onClick={onClick} className={styles}><p>{children} {svg}</p></button>
+        <button onClick={onClick} className={styles}><a><p>{children} {svg}</p></a></button>
     )
 }
 

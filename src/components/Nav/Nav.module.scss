@@ -1,6 +1,12 @@
+@import "../../styles/settings/colors";
+
 .nav {
   display: flex;
   justify-content: space-between;
   padding-top: 0.75rem;
-  margin-bottom: 2rem;
+  //margin-bottom: 2rem;
+}
+
+.dark {
+  background-color: $dark;
 }

@@ -17,9 +17,27 @@ async function fetchAPI(query, {variables} = {}) {
     return json.data
 }
 
+// Location: Where do I live?
+export async function getLocation() {
+    const data = await fetchAPI(
+        `
+        query Position {
+            pages {
+              nodes {
+                location {
+                  position
+                }
+              }
+            }
+        }
+        `
+    );
+    return data?.pages.nodes[0].location
+}
+
 
 //Status query
-export async function getStatus(preview) {
+export async function getStatus() {
     const data = await fetchAPI(
         `
         query Status {
@@ -37,7 +55,7 @@ export async function getStatus(preview) {
 }
 
 //ProjectOne query
-export async function getProjectOne(preview) {
+export async function getProjectOne() {
     const data = await fetchAPI(
         `
         query ProjectOne {
@@ -83,7 +101,7 @@ export async function getProjectOne(preview) {
 
 
 //ProjectTwo query
-export async function getProjectTwo(preview) {
+export async function getProjectTwo() {
 
     const data = await fetchAPI(
         `
@@ -129,7 +147,7 @@ export async function getProjectTwo(preview) {
 }
 
 //ProjectThree query
-export async function getProjectThree(preview) {
+export async function getProjectThree() {
 
     const data = await fetchAPI(
         `
@@ -176,7 +194,7 @@ export async function getProjectThree(preview) {
 
 
 //ProjectFour query
-export async function getProjectFour(preview) {
+export async function getProjectFour() {
 
     const data = await fetchAPI(
         `
@@ -223,7 +241,7 @@ export async function getProjectFour(preview) {
 
 
 //ProjectFive query
-export async function getProjectFive(preview) {
+export async function getProjectFive() {
 
     const data = await fetchAPI(
         `

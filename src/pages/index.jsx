@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Header from "../components/views/Header";
+import Header from "../components/views/Home/Header";
 import Container from "../components/Container";
-import Skills from "../components/views/Skills";
-import Profile from "../components/views/Profile";
-import Portfolio from "../components/views/Portfolio";
-import Footer from "../components/views/Footer";
+import Skills from "../components/views/Home/Skills";
+import Profile from "../components/views/Home/Profile";
+import Portfolio from "../components/views/Home/Portfolio";
+import Footer from "../components/views/Home/Footer";
 import {useLang} from "../lib/LangContext";
 import {data, status} from '../data/data';
 import {getProjectOne, getProjectTwo, getProjectThree, getProjectFour, getProjectFive, getStatus} from "../lib/api";
@@ -21,7 +21,7 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
     const projectTab = [pOne, pTwo, pThree, pFour, pFive]
 
     const lang = useLang();
-    const dataUpdated = lang === 'eng' ? data.eng : data.fr
+    const dataUpdated = lang === 'eng' ? data.home.eng : data.home.fr
     const statusUpdated = isAvailable ? status.available : status.busy
 
 
@@ -39,13 +39,13 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
                 <Container isDark={true}>
                     <Header data={dataUpdated.header} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
                 </Container>
-                <Container>
+                <Container radius>
                     <Skills data={dataUpdated.skills}/>
                 </Container>
                 <Container isDark={true}>
                     <Profile data={dataUpdated.profile}/>
                 </Container>
-                <Container>
+                <Container radius>
                     <Portfolio projects={projectTab} data={dataUpdated.portfolio} lang={lang}/>
                 </Container>
                 <Container footer isDark={true}>

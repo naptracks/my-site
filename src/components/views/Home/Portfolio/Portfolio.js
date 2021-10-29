@@ -1,17 +1,18 @@
+import Link from 'next/link'
 import s from './Portfolio.module.scss';
-import Subtitle from "../../Subtitle";
-import Button from "../../Button";
+import Subtitle from "../../../Subtitle";
+import Button from "../../../Button";
 import {useState} from "react";
-import KeyPoint from "../../KeyPoint/KeyPoint";
-import Paragraph from "../../Paragraph";
-import {svg} from '../../../data/svg';
+import KeyPoint from "../../../KeyPoint/KeyPoint";
+import Paragraph from "../../../Paragraph";
+import {svg} from '../../../../data/svg';
 
 const Portfolio = ({data, projects, lang}) => {
     const [active, setActive] = useState(1)
 
     const Content = (project) => {
         const svgTab = project.tech?.split(',')
-        const image = (url) => url ? <div className={s.image} style={{backgroundImage: `url(${url})`}}></div> : null
+        const image = (url) => url ? <div className={s.image} style={{backgroundImage: `url(${url})`}}/> : null
         return (
             <div className={s.content}>
 
@@ -43,7 +44,9 @@ const Portfolio = ({data, projects, lang}) => {
         <div>
             <Subtitle p={data.p} cursor>{data.subtitle}</Subtitle>
             <div className={s.btn}>
-                <Button black>CONTACT</Button>
+                <Link href={'/contact'}>
+                    <Button black>CONTACT</Button>
+                </Link>
             </div>
             <div className={s.row}>
                 <div className={s.col}>

@@ -1,7 +1,8 @@
 import s from './Skills.module.scss'
-import Subtitle from "../../Subtitle";
-import Stack from "../../Stack";
-import Button from "../../Button";
+import Subtitle from "../../../Subtitle";
+import Stack from "../../../Stack";
+import Button from "../../../Button";
+import Link from "next/link";
 
 const Skills = ({data}) => {
 
@@ -11,7 +12,9 @@ const Skills = ({data}) => {
                 {data.subtitle}
             </Subtitle>
             <div className={s.btn}>
-                <Button black>CONTACT</Button>
+                <Link href={'/contact'}>
+                    <Button black>CONTACT</Button>
+                </Link>
             </div>
             <Stack/>
         </div>

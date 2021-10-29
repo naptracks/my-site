@@ -57,6 +57,6 @@ export async function getStaticProps() {
             isAvailable,
             location
         },
-        revalidate: 1
+        revalidate: 1,
     }
 }

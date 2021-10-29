@@ -12,7 +12,7 @@ const Portfolio = ({data, projects, lang}) => {
 
     const Content = (project) => {
         const svgTab = project.tech?.split(',')
-        const image = (url) => url ? <div className={s.image} style={{backgroundImage: `url(${url})`}}/> : null
+        const image = (url) => url ? <img alt={'Cesar Martel Web Developer'} className={s.image} src={url}/> : null
         return (
             <div className={s.content}>
 

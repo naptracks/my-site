@@ -57,7 +57,7 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
 }
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 
 
     const isAvailable = await getStatus()
@@ -76,6 +76,6 @@ export async function getStaticProps() {
             projectFour,
             projectFive
         },
-        revalidate: 1
+
     }
 }

@@ -48,7 +48,7 @@ const ContactPage = ({isAvailable, location}) => {
 
 export default ContactPage;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const isAvailable = await getStatus()
     const location = await getLocation()
 

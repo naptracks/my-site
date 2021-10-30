@@ -16,11 +16,16 @@ const Footer = ({data, status, withoutImg}) => {
             <div className={s.content}>
                 <Logo status={status}/>
                 <div className={s.bar}/>
-                {!withoutImg ? <Link href={'/contact'}>
-                   <a> <Button cian>CONTACT</Button></a>
-                </Link> : <Link href={'/'}>
-                    <a> <Button cian>PROFILE</Button> </a>
-                </Link>}
+                {
+                    !withoutImg ?
+                        <Link href={'/contact'}>
+                            <a><Button cian>CONTACT</Button></a>
+                        </Link>
+                        :
+                        <Link href={'/'}>
+                            <a> <Button cian>PROFILE</Button> </a>
+                        </Link>
+                }
             </div>
             <div className={s.bottom}>
                 <p>Cesar Martel. ©{date.getFullYear()}</p>

@@ -12,7 +12,7 @@ const Portfolio = ({data, projects, lang}) => {
 
     const Content = (project, i) => {
         const svgTab = project.tech?.split(',')
-        const image = (url) => url ? <img key={url} alt={'Cesar Martel Web Developer'} className={s.image} src={url}/> : null
+        const image = (url) => url ? <div key={url} className={s.image} style={{backgroundImage: `url(${url})`}}/> : null
         return (
             <div key={i} className={s.content}>
 
@@ -45,7 +45,7 @@ const Portfolio = ({data, projects, lang}) => {
             <Subtitle p={data.p} cursor>{data.subtitle}</Subtitle>
             <div className={s.btn}>
                 <Link href={'/contact'}>
-                   <a> <Button black>CONTACT</Button> </a>
+                   <a><Button black>CONTACT</Button></a>
                 </Link>
             </div>
             <div className={s.row}>
@@ -67,7 +67,6 @@ const Portfolio = ({data, projects, lang}) => {
                 {
                     projects.map((project, i) => active === (i+1) && Content(project, i))
                 }
-
             </div>
         </div>
     )

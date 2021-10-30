@@ -16,7 +16,6 @@ const Form = ({data}) => {
                         <button>{data.button}</button>
                 </form>
             </section>
-
         </div>
     )
 }

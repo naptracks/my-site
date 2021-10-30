@@ -15,7 +15,6 @@ const Container = (props) => {
         [s.container]: true,
         [s.footer]: footer,
         [s.navbar]: navbar,
-        // [className]: className
     })
 
     return (

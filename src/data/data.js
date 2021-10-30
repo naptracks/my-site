@@ -143,13 +143,20 @@ export const data = {
 
 }
 
+
+
+export const ENG_AVAILABLE = 'ACTUALLY AVAILABLE'
+export const ENG_BUSY = 'ACTUALLY BUSY'
+export const FR_AVAILABLE = 'ACTUELLEMENT DISPONIBLE'
+export const FR_BUSY = 'ACTUELLEMENT OCCUPÉ'
+
 export const status = {
     available: {
-        eng: 'ACTUALLY AVAILABLE',
-        fr: 'ACTUELLEMENT DISPONIBLE'
+        eng: ENG_AVAILABLE,
+        fr: FR_AVAILABLE
     },
     busy: {
-        eng: 'ACTUALLY BUSY',
-        fr: 'ACTUELLEMENT OCCUPÉ'
+        eng: ENG_BUSY,
+        fr: FR_BUSY
     }
 }

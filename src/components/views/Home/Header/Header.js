@@ -15,7 +15,7 @@ export const Header = ({data, status}) => {
             <Socials/>
             <div className={s.btn}>
                 <Link href={'/contact'}>
-                    <Button white>CONTACT</Button>
+                    <a><Button white>CONTACT</Button></a>
                 </Link>
             </div>
             <IDE blur/>

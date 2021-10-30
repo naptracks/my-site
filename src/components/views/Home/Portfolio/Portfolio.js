@@ -12,7 +12,7 @@ const Portfolio = ({data, projects, lang}) => {
 
     const Content = (project, i) => {
         const svgTab = project.tech?.split(',')
-        const image = (url, i) => url ? <img key={i} alt={'Cesar Martel Web Developer'} className={s.image} src={url}/> : null
+        const image = (url) => url ? <img key={url} alt={'Cesar Martel Web Developer'} className={s.image} src={url}/> : null
         return (
             <div key={i} className={s.content}>
 
@@ -20,7 +20,7 @@ const Portfolio = ({data, projects, lang}) => {
                     {svg.link}<Paragraph title>{project.title}</Paragraph>
                 </a>
 
-                {project.images.map(img => image(img.url, i))}
+                {project.images.map(img => image(img.url))}
 
                 <div className={s.siteProfile}>
                     <Paragraph wide svgTab={svgTab}>Technologies</Paragraph>
@@ -45,7 +45,7 @@ const Portfolio = ({data, projects, lang}) => {
             <Subtitle p={data.p} cursor>{data.subtitle}</Subtitle>
             <div className={s.btn}>
                 <Link href={'/contact'}>
-                    <Button black>CONTACT</Button>
+                   <a> <Button black>CONTACT</Button> </a>
                 </Link>
             </div>
             <div className={s.row}>
@@ -57,7 +57,7 @@ const Portfolio = ({data, projects, lang}) => {
                                 <button
                                     key={i}
                                     onClick={() => setActive((i + 1))}
-                                    className={active === (i + 1) && s.active}>
+                                    className={active === (i + 1) ? s.active : undefined}>
                                     {p.title}
                                 </button>
                             ))

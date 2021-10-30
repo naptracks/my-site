@@ -5,7 +5,7 @@ import color from '../../styles/colors.module.scss';
 
 
 export const techno = (svg, name, href) => {
-    return <div className={s.col}>
+    return <div key={name} className={s.col}>
         {svg}
         <a href={href} target={'_blank'}><p>{name}</p></a>
     </div>

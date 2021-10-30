@@ -9,6 +9,7 @@ import {useLang} from "../lib/LangContext";
 import {data, status} from '../data/data';
 import {getProjectOne, getProjectTwo, getProjectThree, getProjectFour, getProjectFive, getStatus} from "../lib/api";
 import {useProject} from "../hooks/useProject";
+import {fallbackHttpConfig} from "@apollo/client";
 
 
 export default function Home({isAvailable, projectOne, projectTwo, projectThree, projectFour, projectFive}) {
@@ -31,7 +32,7 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
                 <title>Cesar Martel</title>
                 <meta lang='eng' name="viewport" content="initial-scale=1.0, width=device-width"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
                       rel="stylesheet"/>
             </Head>
@@ -78,3 +79,4 @@ export async function getStaticProps() {
         revalidate: 1
     }
 }
+

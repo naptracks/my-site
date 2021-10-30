@@ -17,9 +17,9 @@ const Footer = ({data, status, withoutImg}) => {
                 <Logo status={status}/>
                 <div className={s.bar}/>
                 {!withoutImg ? <Link href={'/contact'}>
-                    <Button cian>CONTACT</Button>
+                   <a> <Button cian>CONTACT</Button></a>
                 </Link> : <Link href={'/'}>
-                    <Button cian>PROFILE</Button>
+                    <a> <Button cian>PROFILE</Button> </a>
                 </Link>}
             </div>
             <div className={s.bottom}>

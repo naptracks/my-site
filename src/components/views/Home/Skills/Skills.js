@@ -13,7 +13,7 @@ const Skills = ({data}) => {
             </Subtitle>
             <div className={s.btn}>
                 <Link href={'/contact'}>
-                        <Button black>CONTACT</Button>
+                    <a> <Button black>CONTACT</Button></a>
                 </Link>
             </div>
             <Stack/>

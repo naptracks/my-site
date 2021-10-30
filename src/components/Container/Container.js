@@ -3,7 +3,7 @@ import cn from 'classnames'
 
 const Container = (props) => {
 
-    const {children, isDark, darkContact, footer, className, style, navbar, radius, fullRadius} = props
+    const {children, isDark, darkContact, footer, style, navbar, radius, fullRadius} = props
     const dark = cn({
         [s.dark]: isDark,
         [s.darkContact]: darkContact,
@@ -15,7 +15,7 @@ const Container = (props) => {
         [s.container]: true,
         [s.footer]: footer,
         [s.navbar]: navbar,
-        [className]: className
+        // [className]: className
     })
 
     return (

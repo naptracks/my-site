@@ -42,7 +42,7 @@ const IDE = ({blur}) => {
                 page.map((c, i) => {
                     let lineNumber = i + 1
                     return (
-                            <div className={s.lineCol}>
+                            <div key={i} className={s.lineCol}>
                                 <div className={s.lineNumber}>
                                     {lineNumber}
                                 </div>

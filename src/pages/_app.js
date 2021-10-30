@@ -1,9 +1,8 @@
 import '../styles/globals.scss'
 import {LangProvider} from '../lib/LangContext'
 
-function MyApp({ Component, pageProps }) {
 
-
+function MyApp({ Component, pageProps}) {
 
   return (
       <LangProvider>
@@ -14,3 +13,8 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp
+
+
+
+
+

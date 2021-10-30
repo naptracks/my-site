@@ -13,11 +13,14 @@ export const useLangUpdate = () => {
 
 
 export const LangProvider = ({children}) => {
+
+
     const [lang, setLang] = useState('eng');
 
     const updateLang = () => {
         setLang(lang => lang === 'eng' ? 'fr' : 'eng');
     }
+
 
     return (
         <LangContext.Provider value={lang}>
@@ -27,4 +30,6 @@ export const LangProvider = ({children}) => {
         </LangContext.Provider>
     )
 }
+
+
 

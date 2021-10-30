@@ -10,17 +10,17 @@ import {svg} from '../../../../data/svg';
 const Portfolio = ({data, projects, lang}) => {
     const [active, setActive] = useState(1)
 
-    const Content = (project) => {
+    const Content = (project, i) => {
         const svgTab = project.tech?.split(',')
-        const image = (url) => url ? <img alt={'Cesar Martel Web Developer'} className={s.image} src={url}/> : null
+        const image = (url, i) => url ? <img key={i} alt={'Cesar Martel Web Developer'} className={s.image} src={url}/> : null
         return (
-            <div className={s.content}>
+            <div key={i} className={s.content}>
 
                 <a className={s.link} href={project.url} target={'_blank'}>
                     {svg.link}<Paragraph title>{project.title}</Paragraph>
                 </a>
 
-                {project.images.map(img => image(img.url))}
+                {project.images.map(img => image(img.url, i))}
 
                 <div className={s.siteProfile}>
                     <Paragraph wide svgTab={svgTab}>Technologies</Paragraph>
@@ -55,6 +55,7 @@ const Portfolio = ({data, projects, lang}) => {
                         {
                             projects.map((p, i) => (
                                 <button
+                                    key={i}
                                     onClick={() => setActive((i + 1))}
                                     className={active === (i + 1) && s.active}>
                                     {p.title}
@@ -64,7 +65,7 @@ const Portfolio = ({data, projects, lang}) => {
                     </div>
                 </div>
                 {
-                    projects.map((project, i) => active === (i+1) && Content(project))
+                    projects.map((project, i) => active === (i+1) && Content(project, i))
                 }
 
             </div>

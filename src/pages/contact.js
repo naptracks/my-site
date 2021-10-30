@@ -25,7 +25,7 @@ const ContactPage = ({isAvailable, location}) => {
                 <title>{title}</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
                       rel="stylesheet"/>
             </Head>
@@ -48,7 +48,7 @@ const ContactPage = ({isAvailable, location}) => {
 
 export default ContactPage;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const isAvailable = await getStatus()
     const location = await getLocation()
 
@@ -57,5 +57,6 @@ export async function getServerSideProps() {
             isAvailable,
             location
         },
+        revalidate: 1
     }
 }

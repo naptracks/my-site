@@ -18,7 +18,7 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
     const pThree = useProject(projectThree)
     const pFour = useProject(projectFour)
     const pFive = useProject(projectFive)
-    const projectTab = [pOne, pTwo, pThree, pFour, pFive]
+    const projects = [pOne, pTwo, pThree, pFour, pFive]
 
     const lang = useLang();
     const dataUpdated = lang === 'eng' ? data.home.eng : data.home.fr
@@ -46,7 +46,7 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
                     <Profile data={dataUpdated.profile}/>
                 </Container>
                 <Container radius>
-                    <Portfolio projects={projectTab} data={dataUpdated.portfolio} lang={lang}/>
+                    <Portfolio projects={projects} data={dataUpdated.portfolio} lang={lang}/>
                 </Container>
                 <Container footer isDark={true}>
                     <Footer data={dataUpdated.footer} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
@@ -56,8 +56,7 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
     )
 }
 
-
-export async function getServerSideProps() {
+export async function getStaticProps() {
 
 
     const isAvailable = await getStatus()
@@ -76,6 +75,6 @@ export async function getServerSideProps() {
             projectFour,
             projectFive
         },
-
+        revalidate: 1
     }
 }

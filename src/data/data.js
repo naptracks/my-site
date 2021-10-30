@@ -97,7 +97,7 @@ export const data = {
                     button: 'GO FRANCAIS'
                 },
                 subtitle: {
-                    h1: <>And this is how <span className={color.orange}>it started</span>...</>,
+                    h1: <>And this is how <span className={color.orange}>it started</span>.</>,
                     p: "I work well, I work fast andI love what I'm doing. You can contact and we will talk about your project."
                 },
                 mailButton: 'Send an em@il',
@@ -120,7 +120,7 @@ export const data = {
                     button: 'GO ENGLISH'
                 },
                 subtitle: {
-                    h1: <>C'est ici que tout <span className={color.orange}>commence</span>...</>,
+                    h1: <>C'est ici que tout <span className={color.orange}>commence</span>.</>,
                     p: "Je travaille vite et bien et j'aime ce que je fais. Contactez moi pour vos projets."
                 },
                 mailButton: 'Envoyer un em@il',

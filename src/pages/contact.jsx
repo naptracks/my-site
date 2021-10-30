@@ -50,12 +50,12 @@ export default ContactPage;
 
 export async function getStaticProps() {
     const isAvailable = await getStatus()
-    // const location = await getLocation()
+    const location = await getLocation()
 
     return {
         props: {
             isAvailable,
-            // location
+            location
         },
         revalidate: 1
     }

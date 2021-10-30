@@ -32,7 +32,7 @@ export async function getLocation() {
         }
         `
     );
-    return data?.pages.nodes[0].location
+    return data?.pages.nodes[0].location.position
 }
 
 

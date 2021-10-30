@@ -9,7 +9,6 @@ import {useLang} from "../lib/LangContext";
 import {data, status} from '../data/data';
 import {getProjectOne, getProjectTwo, getProjectThree, getProjectFour, getProjectFive, getStatus} from "../lib/api";
 import {useProject} from "../hooks/useProject";
-import {fallbackHttpConfig} from "@apollo/client";
 
 
 export default function Home({isAvailable, projectOne, projectTwo, projectThree, projectFour, projectFive}) {
@@ -57,26 +56,26 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
     )
 }
 
-export async function getStaticProps() {
-
-
-    const isAvailable = await getStatus()
-    const projectOne = await getProjectOne()
-    const projectTwo = await getProjectTwo()
-    const projectThree = await getProjectThree()
-    const projectFour = await getProjectFour()
-    const projectFive = await getProjectFive()
-
-    return {
-        props: {
-            isAvailable,
-            projectOne,
-            projectTwo,
-            projectThree,
-            projectFour,
-            projectFive
-        },
-        revalidate: 1
-    }
-}
+// export async function getStaticProps() {
+//
+//
+//     const isAvailable = await getStatus()
+//     const projectOne = await getProjectOne()
+//     const projectTwo = await getProjectTwo()
+//     const projectThree = await getProjectThree()
+//     const projectFour = await getProjectFour()
+//     const projectFive = await getProjectFive()
+//
+//     return {
+//         props: {
+//             isAvailable,
+//             projectOne,
+//             projectTwo,
+//             projectThree,
+//             projectFour,
+//             projectFive
+//         },
+//         revalidate: 1
+//     }
+// }
 

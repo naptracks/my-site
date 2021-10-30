@@ -29,7 +29,7 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
         <>
             <Head>
                 <title>Cesar Martel</title>
-                <meta lang='eng' name="viewport" content="initial-scale=1.0, width=device-width"/>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
@@ -56,26 +56,26 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
     )
 }
 
-// export async function getStaticProps() {
-//
-//
-//     const isAvailable = await getStatus()
-//     const projectOne = await getProjectOne()
-//     const projectTwo = await getProjectTwo()
-//     const projectThree = await getProjectThree()
-//     const projectFour = await getProjectFour()
-//     const projectFive = await getProjectFive()
-//
-//     return {
-//         props: {
-//             isAvailable,
-//             projectOne,
-//             projectTwo,
-//             projectThree,
-//             projectFour,
-//             projectFive
-//         },
-//         revalidate: 1
-//     }
-// }
+export async function getStaticProps() {
+
+
+    const isAvailable = await getStatus()
+    const projectOne = await getProjectOne()
+    const projectTwo = await getProjectTwo()
+    const projectThree = await getProjectThree()
+    const projectFour = await getProjectFour()
+    const projectFive = await getProjectFive()
+
+    return {
+        props: {
+            isAvailable,
+            projectOne,
+            projectTwo,
+            projectThree,
+            projectFour,
+            projectFive
+        },
+        revalidate: 1
+    }
+}
 

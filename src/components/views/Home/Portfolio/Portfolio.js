@@ -43,13 +43,6 @@ const Portfolio = ({data, projects, lang}) => {
     }
 
 
-    const handleChange = e => {
-        console.log(e.target)
-        setActive(e.target.selectedIndex)
-    }
-
-    console.log(active)
-
     return (
         <div>
             <Subtitle p={data.p} cursor>{data.subtitle}</Subtitle>
@@ -75,7 +68,7 @@ const Portfolio = ({data, projects, lang}) => {
                     </div>
                 </div>
                 <div className={s.selection}>
-                    <select className={s.selector} onChange={handleChange} value={active}>
+                    <select className={s.selector} onChange={e => setActive(e.target.selectedIndex)} value={active}>
                     {
                         projects.map((p, i) => (
                             <option key={i} value={i}>{p.title}</option>

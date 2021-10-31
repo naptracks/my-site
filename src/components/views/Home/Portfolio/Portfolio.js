@@ -2,7 +2,7 @@ import Link from 'next/link'
 import s from './Portfolio.module.scss';
 import Subtitle from "../../../Subtitle";
 import Button from "../../../Button";
-import {useRef, useState} from "react";
+import {useState} from "react";
 import KeyPoint from "../../../KeyPoint/KeyPoint";
 import Paragraph from "../../../Paragraph";
 import {svg} from '../../../../data/svg';
@@ -11,10 +11,9 @@ const Portfolio = ({data, projects, lang}) => {
     const [active, setActive] = useState(0)
 
     const Content = (project, i) => {
-        console.log(project.title)
+
         const svgTab = project.tech?.split(',')
-        const image = (url) => url ?
-            <div key={url} className={s.image} style={{backgroundImage: `url(${url})`}}/> : null
+        const image = (url) => url ? <div key={url} className={s.image} style={{backgroundImage: `url(${url})`}}/> : null
 
         return (
             <div key={i} className={s.content}>
@@ -44,7 +43,7 @@ const Portfolio = ({data, projects, lang}) => {
 
 
     return (
-        <div>
+        <>
             <Subtitle p={data.p} cursor>{data.subtitle}</Subtitle>
             <div className={s.btn}>
                 <Link href={'/contact'}>
@@ -57,10 +56,11 @@ const Portfolio = ({data, projects, lang}) => {
                     <div className={s.menu}>
                         {
                             projects.map((p, i) => (
+                                p.title &&
                                 <button
                                     key={i}
                                     onClick={() => setActive(i)}
-                                    className={active === i && s.active }>
+                                    className={active === i && s.active}>
                                     {p.title}
                                 </button>
                             ))
@@ -69,18 +69,16 @@ const Portfolio = ({data, projects, lang}) => {
                 </div>
                 <div className={s.selection}>
                     <select className={s.selector} onChange={e => setActive(e.target.selectedIndex)} value={active}>
-                    {
-                        projects.map((p, i) => (
-                            <option key={i} value={i}>{p.title}</option>
-                        ))
-                    }
+                        {
+                            projects.map((p, i) => p.title && <option key={i} value={i}>{p.title}</option>)
+                        }
                     </select>
                 </div>
                 {
                     projects.map((project, i) => active === i && Content(project, i))
                 }
             </div>
-        </div>
+        </>
     )
 }
 

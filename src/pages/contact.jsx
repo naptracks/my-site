@@ -11,6 +11,7 @@ import Form from "../components/Form";
 import KeyPoint from "../components/KeyPoint/KeyPoint";
 import s from "../components/views/ContactPage/Header/Header.module.scss";
 
+
 const ContactPage = ({isAvailable, location}) => {
 
     const lang = useLang()

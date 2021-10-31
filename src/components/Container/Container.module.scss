@@ -23,15 +23,15 @@
 }
 
 .radius {
-  border-top-left-radius: 5rem ;
-  border-top-right-radius: 5rem;
+  border-top-left-radius: 1rem ;
+  border-top-right-radius: 1rem;
   //border-radius: 5rem;
-  box-shadow: 0 0 30px 20px $cian;
+  box-shadow: 0 0 30px 10px $cian;
 }
 
 .fullRadius {
-  border-radius: 5rem;
-  box-shadow: 0 0 30px 20px $cian;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px 10px $cian;
 }
 
 .darkContact {

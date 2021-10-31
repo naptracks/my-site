@@ -16,12 +16,15 @@ const Logo = ({status}) => {
         <div className={s.logo}>
             <h3>CESAR <span className={color.yellow}>MARTEL</span></h3>
             <div className={styles}/>
-            {
-                status === ENG_BUSY || status === FR_BUSY ?
-                    <h3 className={color.orange}>{status}</h3>
-                    :
-                    <h3 className={color.green}>{status}</h3>
-            }
+            <span>
+                {
+                    status === ENG_BUSY || status === FR_BUSY ?
+                        <h3 className={color.orange}>{status}</h3>
+                        :
+                        <h3 className={color.green}>{status}</h3>
+                }
+            </span>
+
         </div>
     )
 }

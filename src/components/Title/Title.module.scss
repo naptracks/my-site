@@ -1,5 +1,6 @@
 @import "../../styles/settings/_typography.scss";
 @import "../../styles/settings/_colors";
+@import "../../styles/settings/_dimensions";
 
 .center {
   text-align: center;
@@ -7,8 +8,8 @@
   margin-top: 3rem;
   h1 {
     font-family: $font;
-    font-weight: 700;
-    font-size: 100px;
+    font-weight: 500;
+    font-size: 55px;
     color: $white;
     letter-spacing: -.4rem;
   }
@@ -18,3 +19,21 @@
   }
 }
 
+
+@media (min-width: $tablet) {
+  .center {
+    h1 {
+      font-weight: 600;
+      font-size: 80px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .center {
+    h1 {
+      font-weight: 700;
+      font-size: 100px;
+    }
+  }
+}

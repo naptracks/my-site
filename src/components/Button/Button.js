@@ -2,13 +2,14 @@ import s from './Button.module.scss';
 import cn from 'classnames';
 import {svg} from '../../data/svg'
 
-const Button = ({children, white, black, onClick, cian}) => {
+const Button = ({children, white, black, onClick, cian, className}) => {
 
     const styles = cn({
         [s.btn]: true,
         [s.black]: black,
         [s.white]: white,
-        [s.cian]: cian
+        [s.cian]: cian,
+        [className]: className
     })
 
     return (

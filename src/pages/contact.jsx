@@ -6,7 +6,7 @@ import Head from "next/head";
 
 import Header from "../components/views/ContactPage/Header/Header";
 import Footer from "../components/views/Home/Footer";
-import {NavContact} from "../components/Nav/Nav";
+import Nav from "../components/Nav/Nav";
 import Form from "../components/Form";
 import KeyPoint from "../components/KeyPoint/KeyPoint";
 import s from "../components/views/ContactPage/Header/Header.module.scss";
@@ -30,7 +30,7 @@ const ContactPage = ({isAvailable, location}) => {
                       rel="stylesheet"/>
             </Head>
             <Container isDark navbar>
-                <NavContact dark status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr} data={dataUpdated.header.nav}/>
+                <Nav link status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr} data={dataUpdated.header.nav}/>
             </Container>
             <Container fullRadius>
                 <Header location={location} data={dataUpdated.header}/>

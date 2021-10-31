@@ -1,12 +1,57 @@
 @import "../../styles/settings/colors";
+@import "../../styles/settings/dimensions";
 
 .nav {
   display: flex;
   justify-content: space-between;
   padding-top: 0.75rem;
+  align-items: center;
   //margin-bottom: 2rem;
 }
 
 .dark {
   background-color: $dark;
+}
+
+
+.flag  {
+  display: inherit;
+  width: 5rem;
+  height: 3rem;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.flagIcon {
+  display: none;
+}
+
+.classicContainer {
+  display: none;
+}
+
+
+@media (min-width: $desktop) {
+  .flag {
+    display: none;
+  }
+  .classicContainer {
+    display: inherit;
+  }
+
+  .flagIcon {
+    display: inherit;
+    width: 5rem;
+    height: 3rem;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    opacity: .6;
+    cursor: inherit;
+  }
 }

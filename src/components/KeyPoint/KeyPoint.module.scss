@@ -1,11 +1,14 @@
 @import "../../styles/settings/_typography";
 @import "../../styles/settings/_colors";
+@import "../../styles/settings/_dimensions";
 
 .keyPoint {
   font-family: $font;
   color: $cian;
+  max-width: 640px;
   h1 {
     width: fit-content;
+    font-size: 28px;
   }
   p {
     line-height: 27px;
@@ -32,6 +35,22 @@
   }
   .bar {
     background-color: $white;
+  }
+}
+
+@media (min-width: $tablet) {
+  .keyPoint {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .keyPoint {
+    h1 {
+      font-size: 32px;
+    }
   }
 }
 

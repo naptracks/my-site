@@ -9,6 +9,8 @@ import {useLang} from "../lib/LangContext";
 import {data, status} from '../data/data';
 import {getProjectOne, getProjectTwo, getProjectThree, getProjectFour, getProjectFive, getStatus} from "../lib/api";
 import {useProject} from "../hooks/useProject";
+import {useState, useLayoutEffect, useRef} from "react";
+import Surfer from "../components/Surfer";
 
 
 export default function Home({isAvailable, projectOne, projectTwo, projectThree, projectFour, projectFive}) {
@@ -24,6 +26,27 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
     const dataUpdated = lang === 'eng' ? data.home.eng : data.home.fr
     const statusUpdated = isAvailable ? status.available : status.busy
 
+    //surfer
+    const refMain = useRef();
+    const [anim, setAnim] = useState({transform: 'translateX(-200px)'})
+
+    useLayoutEffect(() => {
+        window.addEventListener('scroll', onScroll)
+        return () => window.removeEventListener('scroll', onScroll)
+    })
+    const onScroll = () => {
+
+        const top = refMain.current.getBoundingClientRect().top
+        const scrollRef = top + 3610;
+        const width = (scrollRef) * -2
+
+        if (top <= -3450 && top >= -4500) {
+            setAnim({
+                transform: `translateX(${width}px)`,
+            })
+        }
+    }
+
 
     return (
         <>
@@ -35,13 +58,14 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
                       rel="stylesheet"/>
             </Head>
-            <main>
+            <main ref={refMain}>
                 <Container isDark={true}>
                     <Header data={dataUpdated.header} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
                 </Container>
                 <Container radius>
                     <Skills data={dataUpdated.skills}/>
                 </Container>
+                <Surfer anim={anim}/>
                 <Container isDark={true}>
                     <Profile data={dataUpdated.profile}/>
                 </Container>

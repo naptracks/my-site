@@ -1,8 +1,7 @@
 import s from './Surfer.module.scss';
 import {svg} from "../../data/svg";
-import {useState} from "react";
 
-const Surfer = (anim) => {
+const Surfer = ({anim}) => {
 
 
     return (
@@ -19,10 +18,6 @@ const Surfer = (anim) => {
 export default Surfer
 
 
-//draft
-// console.log(isAvailable)
-
-//
 // const refMain = useRef();
 // const [anim, setAnim] = useState({})
 // useLayoutEffect(() => {

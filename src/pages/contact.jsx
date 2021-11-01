@@ -30,19 +30,23 @@ const ContactPage = ({isAvailable, location}) => {
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
                       rel="stylesheet"/>
             </Head>
-            <Container isDark navbar>
-                <Nav link status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr} data={dataUpdated.header.nav}/>
-            </Container>
-            <Container fullRadius>
-                <Header location={location} data={dataUpdated.header}/>
-            </Container>
-            <Container isDark={true} footer>
-                <div className={s.formContainer}>
-                    <KeyPoint white>{dataUpdated.footer.keyPoint}</KeyPoint>
-                    <Form data={dataUpdated.footer.form}/>
-                </div>
-                <Footer withoutImg data={dataUpdated.footer} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
-            </Container>
+            <main>
+                <Container isDark navbar>
+                    <Nav link status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}
+                         data={dataUpdated.header.nav}/>
+                </Container>
+                <Container fullRadius>
+                    <Header location={location} data={dataUpdated.header}/>
+                </Container>
+                <Container isDark={true} footer>
+                    <div className={s.formContainer}>
+                        <KeyPoint white>{dataUpdated.footer.keyPoint}</KeyPoint>
+                        <Form data={dataUpdated.footer.form}/>
+                    </div>
+                    <Footer withoutImg data={dataUpdated.footer}
+                            status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
+                </Container>
+            </main>
         </>
     )
 }

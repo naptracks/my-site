@@ -12,7 +12,7 @@ import {useProject} from "../hooks/useProject";
 
 
 export default function Home({isAvailable, projectOne, projectTwo, projectThree, projectFour, projectFive}) {
-
+    //useProject universalize project objects
     const pOne = useProject(projectOne)
     const pTwo = useProject(projectTwo)
     const pThree = useProject(projectThree)
@@ -20,7 +20,7 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
     const pFive = useProject(projectFive)
     const projects = [pOne, pTwo, pThree, pFour, pFive]
 
-    const lang = useLang();
+    const lang = useLang(); //default: 'eng'
     const dataUpdated = lang === 'eng' ? data.home.eng : data.home.fr
     const statusUpdated = isAvailable ? status.available : status.busy
 

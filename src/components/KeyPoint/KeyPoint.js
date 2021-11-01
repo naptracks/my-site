@@ -1,11 +1,12 @@
 import s from './KeyPoint.module.scss';
 import cn from 'classnames';
 
-const KeyPoint = ({children, white, bar, p}) => {
+const KeyPoint = ({children, white, bar, p, classname}) => {
 
     const styles = cn({
         [s.keyPoint]: true,
-        [s.white]: white
+        [s.white]: white,
+        [classname]: classname
     })
 
     return (

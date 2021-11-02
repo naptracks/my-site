@@ -1,7 +1,15 @@
 import s from "../components/IDE/IDE.module.scss";
 
 
+//svg object:
+//svg = {
+//   {svg, name<optional>, href<optional>}
+// };
+
+
 export const svg = {
+
+    //techno
     js: {
         svg: <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 256 256">
             <path fill="#F7DF1E" d="M0 0h256v256H0V0z"/>

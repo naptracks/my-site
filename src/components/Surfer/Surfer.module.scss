@@ -1,4 +1,5 @@
 @import '../../styles/settings/_colors';
+@import '../../styles/settings/_dimensions';
 
 
 .van {
@@ -39,4 +40,7 @@
 
   }
 }
-
+//
+//@media (min-width: $tablet) {
+//  display: none;
+//}

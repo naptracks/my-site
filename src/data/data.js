@@ -1,6 +1,12 @@
 import color from '../styles/colors.module.scss';
 
 
+//data object:
+//-|<pages>
+//---|<lang>
+//------|<views>
+//---------|<components>
+
 export const data = {
     home: {
         eng: {
@@ -144,7 +150,7 @@ export const data = {
 }
 
 
-
+//edit status
 export const ENG_AVAILABLE = 'ACTUALLY AVAILABLE'
 export const ENG_BUSY = 'ACTUALLY BUSY'
 export const FR_AVAILABLE = 'ACTUELLEMENT DISPONIBLE'

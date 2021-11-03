@@ -1,4 +1,11 @@
 import color from '../styles/colors.module.scss';
+import {
+    y,
+    o,
+    p,
+    g,
+    a
+} from './tools'
 
 
 //data object:
@@ -9,6 +16,8 @@ import color from '../styles/colors.module.scss';
 
 export const data = {
     home: {
+
+        //HOME ENGLISH
         eng: {
             header: {
                 nav: {
@@ -54,49 +63,49 @@ export const data = {
                 subtitle: <>let's work <span className={color.yellow}>together</span>.</>,
             }
         },
+        // HOME FRANCAIS
         fr: {
             header: {
                 nav: {
                     button: 'GO ENGLISH',
                 },
                 title: {
-                    h1: <>Développeur<span className={color.yellow}> Web</span></>,
+                    h1: <>Développeur {y('Web')}</>,
                     p: 'React JS, Next JS, GraphQL, REST API, Material UI',
                 }
             },
             skills: {
-                subtitle: <> Mon <span className={color.orange}>Stack</span> en tant que Full-Stack <span
-                    className={color.orange}>Programeur</span></>,
-                p: "La programmation informatique nous ouvre sur la liberté de designer le monde que l'on souhaite voir. Travailler en collaboration avec des esprits créatifs sur des solutions innovantes qui permettent un monde meilleur est un de mes principes.",
-
+                subtitle: <>Mon {o('Stack')} en tant que Full-Stack {o('Développeur')}</>,
+                p: <>Je suis spécialisé en {a('React JS', 'https://fr.reactjs.org/')}, le très populaire framework développé par facebook permettant de créer des interfaces utilisateurs complexes. Couplé à la surcouche {a('Next JS', 'https://nextjs.org/')}, la performance du web n'aura jamais été aussi aboutit. Je vous propose mon expertise sur un panel de technologies les plus mordernes pour réaliser de facon optimal tous vos projets en ligne.</>,
             },
             profile: {
-                subtitle: <>Laissez-moi me <span className={color.yellow}>présenter</span></>,
-                p: "Ayant travaillé dans le domaine excitant de la musique live et le studio d'enregistrement, j'ai développé une forte capacité à manager des deadlines dans un environement stressant pour aboutir à des créations",
+                subtitle: <>Petite {y('introduction')}</>,
+                p: <>Ma personalité professionnelle se compose d'une carrière d'ingénieur du son dans le milieu très excitant des concerts et des studios d'enregistrements. Par le biais de formations, c'est en 2018 que je découvre le pouvoir magique du développeur informatique: "Maitriser le Digital"! Et c'est depuis 2019 que mes journées sont aujourd'hui consacrées à développer vos idées, dans l'entente, la bonne humeur et la performance.</>,
                 skillOne: {
-                    keyPoint: "strong skills.",
-                    p: "Mes points forts, j'en ai beaucoup!",
+                    keyPoint: "un résultat de qualité.",
+                    p: <>Qu'on se le dise, un projet web peut etre parsemé d'embuches et de contraintes. Mon travail n'est pas seulement de vous remettre une livraison de qualité dans un temps pré-défini, c'est aussi palier à un certain nombre de defis qui naîtrons au fil du projets. Et ça, c'est mon dada... Je garantis tous mes efforts pour un résultats de qualité qui vous comblera.</>,
                 },
                 skillTwo: {
-                    keyPoint: "passionate.",
-                    p: "Wouala je suis passionné!",
+                    keyPoint: "je suis passionné.",
+                    p: <>J'ai de la chance, j'ai des passions, et devinez quoi..., j'en ai fait ma profession. Je vous propose un code soigné, efficace et facilement manipulable dans le temps. De l'Application Next JS en headless CMS avec un Server-Side Rendering, au simple One-Page, s'il vous plait, nourrissez ma passion! </>,
                 },
                 skillThree: {
-                    keyPoint: "easy to work with.",
-                    p: "J'ai de la weed",
+                    keyPoint: "une bonne entente.",
+                    p: <>Je maitrise les outils du "team working". Git, Slack et le live coding sont une deuxième nature pour moi. Je suis disponible à tout moment de la semaine en visio ou par téléphone. Me sentir efficace, utile et proche du client sont des objectifs que j'applique du début à la fin dans toutes mes missions.</>,
                 },
             },
             portfolio: {
-                subtitle: <>Voici ce que <span className={color.orange}>je fais</span></>,
-                p: "Petite presentation de ce que fais, c'est beau",
-                keyPoint: <>Selectionne un <span className={color.orange}> site</span></>,
+                subtitle: <>Un petit {o('apperçu')}</>,
+                p: "Je vous propose de jetter un oeil sur les differents projets que j'ai eu la chance de réaliser ces dernières années.",
+                keyPoint: <>Selectionne un {o('site')}</>,
             },
             footer: {
-                subtitle: <>Travaillons <span className={color.yellow}>ensemble</span>.</>,
+                subtitle: <>Travaillons {y('ensemble')}.</>,
             }
         },
     },
     contact: {
+        //CONTACT ENGLISH
         eng: {
             header: {
                 nav: {
@@ -120,21 +129,22 @@ export const data = {
                 }
             },
         },
+        //CONTACT FRANCAIS
         fr: {
             header: {
                 nav: {
                     button: 'GO ENGLISH'
                 },
                 subtitle: {
-                    h1: <>C'est ici que tout <span className={color.orange}>commence</span>.</>,
-                    p: "Je travaille vite et bien et j'aime ce que je fais. Contactez moi pour vos projets."
+                    h1: <>C'est ici que tout {o('commence')}.</>,
+                    p: "Je suis disponible en semaine de 9h à 19h. J'essaie au mieux de vous répondre dans les plus bref délais."
                 },
                 mailButton: 'Envoyer un em@il',
 
 
             },
             footer: {
-                subtitle: <>Travaillons <span className={color.yellow}>ensemble</span>.</>,
+                subtitle: <>Travaillons {y('ensemble')}.</>,
                 form: {
                     email: 'Adresse Email',
                     name: 'Nom - Prénom',

@@ -1,15 +1,17 @@
 import color from "../styles/colors.module.scss";
-
-const hookL = '<'
-const hookR = '>'
-const bracketL = '{'
-const bracketR = '}'
-const parL = '('
-const parR = ')'
-const y = (text) => <span className={color.yellow}>{text}</span> //yellow
-const p = (text) => <span className={color.purple}>{text}</span> // purple
-const g = (text) => <span className={color.green}>{text}</span> // green
-const o = (text) => <span className={color.orange}>{text}</span> //orange
+import {
+    hookL,
+    hookR,
+    bracketL,
+    bracketR,
+    parL,
+    parR,
+    a,
+    o,
+    g,
+    p,
+    y
+} from './tools'
 
 
 //write lines of code by writing object like so: {line, margin<1 to 3><optional>}

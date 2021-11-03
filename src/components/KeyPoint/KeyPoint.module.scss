@@ -6,7 +6,6 @@
   font-family: $font;
   color: $cian;
   max-width: 640px;
-  min-height: 22em;
   h1 {
     width: fit-content;
     font-size: 28px;
@@ -17,6 +16,9 @@
     letter-spacing: 0.06rem;
     font-size: 1.1rem;
   }
+}
+.minHeight {
+  min-height: 22em;
 }
 
 .bar {

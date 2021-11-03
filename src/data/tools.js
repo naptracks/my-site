@@ -1,4 +1,5 @@
 import color from "../styles/colors.module.scss";
+import s from '../components/views/Home/Profile/Profile.module.scss'
 
 export const hookL = '<'
 export const hookR = '>'
@@ -11,3 +12,5 @@ export const p = (text) => <span className={color.purple}>{text}</span> // purpl
 export const g = (text) => <span className={color.green}>{text}</span> // green
 export const o = (text) => <span className={color.orange}>{text}</span> //orange
 export const a = (text, href) => <a className={color.purple} href={href}>{text}</a> // link
+export const h = (text) => <span className={s.highlight}>{text}</span>
+

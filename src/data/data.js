@@ -4,7 +4,8 @@ import {
     o,
     p,
     g,
-    a
+    a,
+    h
 } from './tools'
 
 
@@ -83,15 +84,15 @@ export const data = {
                 p: <>Ma personalité professionnelle se compose d'une carrière d'ingénieur du son dans le milieu très excitant des concerts et des studios d'enregistrements. Par le biais de formations, c'est en 2018 que je découvre le pouvoir magique du développeur informatique: "Maitriser le Digital"! Et c'est depuis 2019 que mes journées sont aujourd'hui consacrées à développer vos idées, dans l'entente, la bonne humeur et la performance.</>,
                 skillOne: {
                     keyPoint: "un résultat de qualité.",
-                    p: <>Qu'on se le dise, un projet web peut etre parsemé d'embuches et de contraintes. Mon travail n'est pas seulement de vous remettre une livraison de qualité dans un temps pré-défini, c'est aussi palier à un certain nombre de defis qui naîtrons au fil du projets. Et ça, c'est mon dada... Je garantis tous mes efforts pour un résultats de qualité qui vous comblera.</>,
+                    p: <>Qu'on se le dise, un projet web peut etre parsemé d'embuches et de contraintes. Mon travail n'est pas seulement de vous remettre une {h('livraison de qualité')} dans un temps pré-défini, c'est aussi palier à {h('un certain nombre de defis')} qui naîtrons au fil du projets. Et ça, c'est mon dada... Je garantis {h('tous mes efforts')} pour un {h('résultats de qualité')} qui vous comblera.</>,
                 },
                 skillTwo: {
                     keyPoint: "je suis passionné.",
-                    p: <>J'ai de la chance, j'ai des passions, et devinez quoi..., j'en ai fait ma profession. Je vous propose un code soigné, efficace et facilement manipulable dans le temps. De l'Application Next JS en headless CMS avec un Server-Side Rendering, au simple One-Page, s'il vous plait, nourrissez ma passion! </>,
+                    p: <>J'ai de la chance, j'ai des passions, et devinez quoi..., j'en ai fait ma profession. Je vous propose {h('un code soigné,')} efficace et facilement {h('manipulable')} dans le temps. De l'Application Next JS en {h('headless CMS')} avec un {h('Server-Side Rendering')}, au simple {h('One-Page')}, s'il vous plait, nourrissez ma passion! </>,
                 },
                 skillThree: {
                     keyPoint: "une bonne entente.",
-                    p: <>Je maitrise les outils du "team working". Git, Slack et le live coding sont une deuxième nature pour moi. Je suis disponible à tout moment de la semaine en visio ou par téléphone. Me sentir efficace, utile et proche du client sont des objectifs que j'applique du début à la fin dans toutes mes missions.</>,
+                    p: <>Je maitrise les outils du {h('"team working"')}. Git, Slack et le live coding sont une deuxième nature pour moi. Je suis disponible à tout moment de la semaine en visio ou par téléphone. Me sentir {h('efficace')}, {h('utile')} et {h('proche du client')} sont des objectifs que j'applique du début à la fin dans toutes mes missions.</>,
                 },
             },
             portfolio: {

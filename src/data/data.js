@@ -25,18 +25,17 @@ export const data = {
                     button: 'GO FRANÇAIS',
                 },
                 title: {
-                    h1: <>Web<span className={color.yellow}> Developer</span></>,
+                    h1: <>Web {y('Developer')}</>,
                     p: 'React JS, Next JS, GraphQL, REST API, Material UI',
                 }
             },
             skills: {
-                subtitle: <> My <span className={color.orange}>Stack</span> as a Full-Stack <span
-                    className={color.orange}>Programmer</span></>,
+                subtitle: <> My {o('Stack')} as a Full-Stack {o('Programmer')}</>,
                 p: "Software engineering gives us the freedom to design the world we want to see. Working collaboratively with creative thinkers on innovative solutions that make the world better for people is how I thrive.",
 
             },
             profile: {
-                subtitle: <>Let me <span className={color.yellow}>introduce</span> myself</>,
+                subtitle: <>Let me {y('introduce')} myself</>,
                 p: "Having worked in the exciting live music environment, I developped a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.",
                 skillOne: {
                     keyPoint: "strong skills.",
@@ -113,7 +112,7 @@ export const data = {
                     button: 'GO FRANCAIS'
                 },
                 subtitle: {
-                    h1: <>And this is how <span className={color.orange}>it started</span>.</>,
+                    h1: <>And this is how {o('it started')}.</>,
                     p: "I work well, I work fast andI love what I'm doing. You can contact and we will talk about your project."
                 },
                 mailButton: 'Send an em@il',

@@ -237,7 +237,7 @@ export const svg = {
             </g>
         </svg>,
         name: 'TypeScript',
-        href: 'https://developer.mozilla.org/en-US/docs/Web/typescript'
+        href: 'https://www.typescriptlang.org/'
 
     },
 

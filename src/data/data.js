@@ -18,8 +18,9 @@ import {
 export const data = {
     home: {
 
-        //HOME ENGLISH
+        //PAGE HOME ENGLISH
         eng: {
+
             header: {
                 nav: {
                     button: 'GO FRANÇAIS',
@@ -29,11 +30,12 @@ export const data = {
                     p: 'React JS, Next JS, GraphQL, REST API, Material UI',
                 }
             },
+
             skills: {
                 subtitle: <> My {o('Stack')} as a Full-Stack {o('Programmer')}</>,
                 p: "Software engineering gives us the freedom to design the world we want to see. Working collaboratively with creative thinkers on innovative solutions that make the world better for people is how I thrive.",
-
             },
+
             profile: {
                 subtitle: <>Let me {y('introduce')} myself</>,
                 p: "Having worked in the exciting live music environment, I developped a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.",
@@ -41,15 +43,18 @@ export const data = {
                     keyPoint: "strong skills.",
                     p: "Having worked in the exciting live music environment, I developped a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.",
                 },
+
                 skillTwo: {
                     keyPoint: "passionate.",
                     p: "Having worked in the exciting live music environment, I developped a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.",
                 },
+
                 skillThree: {
                     keyPoint: "easy to work with.",
                     p: "Having worked in the exciting live music environment, I developped a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.",
                 },
             },
+
             portfolio: {
                 subtitle: <>Here is <span className={color.orange}>what</span> I <span
                     className={color.orange}>do</span></>,
@@ -63,6 +68,8 @@ export const data = {
                 subtitle: <>let's work <span className={color.yellow}>together</span>.</>,
             }
         },
+
+
         // HOME FRANCAIS
         fr: {
             header: {
@@ -104,6 +111,8 @@ export const data = {
             }
         },
     },
+
+
     contact: {
         //CONTACT ENGLISH
         eng: {
@@ -116,7 +125,6 @@ export const data = {
                     p: "I work well, I work fast andI love what I'm doing. You can contact and we will talk about your project."
                 },
                 mailButton: 'Send an em@il',
-
             },
             footer: {
                 keyPoint: 'contact form.',
@@ -129,6 +137,8 @@ export const data = {
                 }
             },
         },
+
+
         //CONTACT FRANCAIS
         fr: {
             header: {
@@ -140,8 +150,6 @@ export const data = {
                     p: "Je suis disponible en semaine de 9h à 19h. J'essaie au mieux de vous répondre dans les plus bref délais."
                 },
                 mailButton: 'Envoyer un em@il',
-
-
             },
             footer: {
                 subtitle: <>Travaillons {y('ensemble')}.</>,
@@ -154,9 +162,7 @@ export const data = {
                 keyPoint: 'formulaire de contact.',
             },
         },
-
     }
-
 }
 
 

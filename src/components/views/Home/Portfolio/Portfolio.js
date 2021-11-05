@@ -9,6 +9,7 @@ import {svg} from '../../../../data/svg';
 
 const Portfolio = ({data, projects, lang}) => {
     const [active, setActive] = useState(0)
+    const [up, setUp] =useState({top: '0'})
 
     const Content = (project, i) => {
 
@@ -16,7 +17,7 @@ const Portfolio = ({data, projects, lang}) => {
         const image = (url) => url ? <div key={url} className={s.image} style={{backgroundImage: `url(${url})`}}/> : null
 
         return (
-            <div key={i} className={s.content}>
+            <div key={i} className={s.content} style={up}>
 
                 <a className={s.link} href={project.url} target={'_blank'}>
                     {svg.link}<Paragraph title>{project.title}</Paragraph>
@@ -41,6 +42,10 @@ const Portfolio = ({data, projects, lang}) => {
         )
     }
 
+    const onClick = i => {
+        setActive(i)
+        setUp({top: '0'})
+    }
 
     return (
         <>
@@ -58,8 +63,9 @@ const Portfolio = ({data, projects, lang}) => {
                             projects.map((p, i) => (
                                 p.title &&
                                 <button
+                                    id={active}
                                     key={i}
-                                    onClick={() => setActive(i)}
+                                    onClick={() => onClick(i)}
                                     className={active === i && s.active}>
                                     {p.title}
                                 </button>

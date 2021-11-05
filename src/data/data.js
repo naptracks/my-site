@@ -1,4 +1,5 @@
 import color from '../styles/colors.module.scss';
+import {svg} from './svg'
 import {
     y,
     o,
@@ -33,39 +34,36 @@ export const data = {
 
             skills: {
                 subtitle: <> My {o('Stack')} as a Full-Stack {o('Programmer')}</>,
-                p: "Software engineering gives us the freedom to design the world we want to see. Working collaboratively with creative thinkers on innovative solutions that make the world better for people is how I thrive.",
+                p: <>Software engineering gives us the freedom we want to see. I'm Cesar Martel and I'm specialized in {a('React JS', svg.reactjs.href)}, the popular framework developed by facebook which make possible a whole universe of complex user interfaces. And thanks to the friendly {a('Next JS', svg.nextjs.href)}, new generations of websites has become faster and more optimized than ever. I offer you my expertize on the most recent and robust technologies to give life to your projects. Get in touch!</>,
             },
 
             profile: {
                 subtitle: <>Let me {y('introduce')} myself</>,
-                p: "Having worked in the exciting live music environment, I developped a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.",
+                p: <>I come from the exciting live music and recording studios environment, learning how to manage tight deadlines as well as high stress environment. In 2019 I studied the power of coding and how it can be a useful tool to product creation. Since then, I dedicate my days to developed an adaptive code which fits the best with your project.</>,
                 skillOne: {
                     keyPoint: "strong skills.",
-                    p: "Having worked in the exciting live music environment, I developped a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.",
+                    p: <>Let's say it, a web project can hide problems as well as restrictions. My work does not only consist of providing a good quality product in a pre-defined timing, it also has to face a numbers of problems that pops up along the side. And this is what I love in this job. I guarantee you a high quality code in ever technologies you need.</>,
                 },
 
                 skillTwo: {
                     keyPoint: "passionate.",
-                    p: "Having worked in the exciting live music environment, I developped a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.",
+                    p: <>I feel lucky, I have passions, and guess what..., it also is my job. I put all my passion into my code to reach out your goals. From an headless CMS app with Server-Side Rendering to the simple One-page, please feed my passion.</>,
                 },
 
                 skillThree: {
                     keyPoint: "easy to work with.",
-                    p: "Having worked in the exciting live music environment, I developped a deep understanding of how to manage a tight deadline as well as high stress environment to approach to product creation.",
+                    p: <>Team working is always an experience that I enjoy. Git, Slack or live coding are second nature to me. I make myself reachable anytime during the week. Feeling effective, useful and close to the customer is what I aim for all missions that I accept.</>,
                 },
             },
 
             portfolio: {
-                subtitle: <>Here is <span className={color.orange}>what</span> I <span
-                    className={color.orange}>do</span></>,
-                p: <>Having worked in the exciting live music environment, I developed a deep understanding of how to
-                    manage
-                    a tight deadline as well as high stress environment to approach to product creation.</>,
-                keyPoint: <>Select a <span className={color.orange}> website</span></>,
+                subtitle: <>Let's {o('showcase')}</>,
+                p: <>Have a look at what I can do. You can find below some projects made with various technologies and complexities that I've been lucky to realised those last years.</>,
+                keyPoint: <>Select a {o('website')}.</>,
                 project: {}
             },
             footer: {
-                subtitle: <>let's work <span className={color.yellow}>together</span>.</>,
+                subtitle: <>let's work {y('together')}.</>,
             }
         },
 
@@ -83,7 +81,7 @@ export const data = {
             },
             skills: {
                 subtitle: <>Mon {o('Stack')} en tant que Full-Stack {o('Développeur')}</>,
-                p: <>Je suis spécialisé en {a('React JS', 'https://fr.reactjs.org/')}, le très populaire framework développé par facebook permettant de créer des interfaces utilisateurs complexes. Couplé à la surcouche {a('Next JS', 'https://nextjs.org/')}, la performance du web n'aura jamais été aussi aboutit. Je vous propose mon expertise sur un panel de technologies les plus mordernes pour réaliser de facon optimal tous vos projets en ligne.</>,
+                p: <>L'ingénieurie informatique nous offre la liberté de conçevoir le monde que l'on souhaite voir. Je m'appelle Cesar Martel et je suis spécialisé en {a('React JS', 'https://fr.reactjs.org/')}, le très populaire framework développé par facebook permettant de créer des interfaces utilisateurs complexes. Couplé à la surcouche {a('Next JS', 'https://nextjs.org/')}, la performance du web n'aura jamais été aussi aboutit. Je vous propose mon expertise sur un panel de technologies les plus mordernes pour réaliser de facon optimal tous vos projets en ligne.</>,
             },
             profile: {
                 subtitle: <>Petite {y('introduction')}</>,
@@ -122,13 +120,13 @@ export const data = {
                 },
                 subtitle: {
                     h1: <>And this is how {o('it started')}.</>,
-                    p: "I work well, I work fast andI love what I'm doing. You can contact and we will talk about your project."
+                    p: "I work well, I work fast and I love what I'm doing. Contact me to talk about your project."
                 },
                 mailButton: 'Send an em@il',
             },
             footer: {
                 keyPoint: 'contact form.',
-                subtitle: <>Let's work <span className={color.yellow}>together</span>.</>,
+                subtitle: <>Let's work {y('together')}.</>,
                 form: {
                     email: 'Email Adress',
                     name: 'First-name - Last-name',

@@ -112,9 +112,9 @@ export const data = {
             skills: {
                 subtitle: <>Mon {o('Stack')} en tant que Full-Stack {o('Développeur')}</>,
                 p: <>L'ingénieurie informatique nous offre la liberté de conçevoir le monde que l'on souhaite voir. Je
-                    m'appelle Cesar Martel et je suis spécialisé en {a('React JS', 'https://fr.reactjs.org/')}, le très
+                    m'appelle Cesar Martel et je suis spécialisé en {a('React JS', svg.reactjs.href)}, le très
                     populaire framework développé par facebook permettant de créer des interfaces utilisateurs
-                    complexes. Couplé à la surcouche {a('Next JS', 'https://nextjs.org/')}, la performance du web n'aura
+                    complexes. Couplé à la surcouche {a('Next JS', svg.nextjs.href)}, la performance du web n'aura
                     jamais été aussi aboutit. Je vous propose mon expertise sur un panel de technologies les plus
                     mordernes pour réaliser de facon optimal tous vos projets en ligne.</>,
             },

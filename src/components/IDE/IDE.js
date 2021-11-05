@@ -66,13 +66,13 @@ const IDE = ({blur, lang}) => {
         <div className={styles}>
             <div className={s.headerContainer}>
                 <button onClick={() => onClick(1)} className={active === 1 ? s.tabUsedWithRadius : s.tabWithRadius}>
-                    {svg.tsMini} <span className={s.tabContent}>app.js</span>
+                    {svg.jsMini} <span className={s.tabContent}>app.js</span>
                 </button>
                 <button onClick={() => onClick(2)} className={active === 2 ? s.tabUsed : s.tab}>
-                    {svg.tsMini} <span className={s.tabContent}>Header.js</span>
+                    {svg.jsMini} <span className={s.tabContent}>Header.js</span>
                 </button>
                 <button onClick={() => onClick(3)} className={active === 3 ? s.tabUsed : s.tab}>
-                    {svg.tsMini} <span className={s.tabContent}>ContactButton.js</span>
+                    {svg.jsMini} <span className={s.tabContent}>ContactButton.js</span>
                 </button>
             </div>
             {

@@ -20,7 +20,7 @@ import {
 // {line: ''} => blank line
 export const idePageOne = [
     {
-        line: <>{p('import')} React {p('from')} {g("'react'")}</>
+        line: <>{p('import')} {b('React')} {p('from')} {g("'react'")}</>
     },
     {line: ''},
     {line: <>{w('// Hi there, I\'m Cesar Martel and you are on my portfolio.')}</>},
@@ -76,7 +76,7 @@ export const idePageOne = [
 
 export const idePageTwo = [
     {
-        line: <>{p('import')} React {p('from')} {g("'react'")}</>
+        line: <>{p('import')} {b('React')} {p('from')} {g("'react'")}</>
     },
     {line: ''},
     {
@@ -129,7 +129,10 @@ export const idePageTwo = [
 
 export const idePageThree = [
     {
-        line: <>{p('import')} React {p('from')} {g("'react'")}</>
+        line: <>{p('import')} {b('React')} {p('from')} {g("'react'")}</>
+    },
+    {
+        line: <>{p('import')} {bracketL} {b('getContact, getNiceReadableCode, getWorkDoneWithUpdates')} {bracketR} {p('from')} {g("'react'")}</>
     },
     {line: ''},
     {

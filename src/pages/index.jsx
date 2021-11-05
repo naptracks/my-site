@@ -62,11 +62,11 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
                 <Container isDark={true}>
                     <Header data={dataUpdated.header} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
                 </Container>
-                <Container radius>
+                <Container footer radius>
                     <Skills data={dataUpdated.skills}/>
                 </Container>
                 <Surfer anim={anim}/>
-                <Container isDark={true}>
+                <Container footer isDark={true}>
                     <Profile data={dataUpdated.profile}/>
                 </Container>
                 <Container radius>

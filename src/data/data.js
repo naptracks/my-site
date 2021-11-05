@@ -39,20 +39,20 @@ export const data = {
 
             profile: {
                 subtitle: <>Let me {y('introduce')} myself</>,
-                p: <>I come from the exciting live music and recording studios environment, learning how to manage tight deadlines as well as high stress environment. In 2019 I studied the power of coding and how it can be a useful tool to product creation. Since then, I dedicate my days to developed an adaptive code which fits the best with your project.</>,
+                p: <>I come from the exciting live music and recording studios area, learning how to manage tight deadlines as well as high stress environment. In 2019 I studied the power of coding and how it can be a useful tool to product creation. Since then, I dedicate my days to developed an adaptive code which fits the best with your project.</>,
                 skillOne: {
-                    keyPoint: "strong skills.",
-                    p: <>Let's say it, a web project can hide problems as well as restrictions. My work does not only consist of providing a good quality product in a pre-defined timing, it also has to face a numbers of problems that pops up along the side. And this is what I love in this job. I guarantee you a high quality code in ever technologies you need.</>,
+                    keyPoint: "singleness.",
+                    p: <>Let's say it, a web project can hide problems as well as restrictions. My work does not only consist of providing a {h('good quality product')} in a {h('pre-defined timing')}, it also has to face numbers of problems that pops up along the side. And this is what I love in this job. I guarantee you a {h('high quality code')} in ever technologies you need.</>,
                 },
 
                 skillTwo: {
                     keyPoint: "passionate.",
-                    p: <>I feel lucky, I have passions, and guess what..., it also is my job. I put all my passion into my code to reach out your goals. From an headless CMS app with Server-Side Rendering to the simple One-page, please feed my passion.</>,
+                    p: <>I feel lucky, I have passions, and guess what..., it also is my job. I put all my passion into my code to {h('reach out your goals')}. From an {h('headless CMS')} app with {h('Server-Side Rendering')} to the simple One-page, please feed my passion.</>,
                 },
 
                 skillThree: {
                     keyPoint: "easy to work with.",
-                    p: <>Team working is always an experience that I enjoy. Git, Slack or live coding are second nature to me. I make myself reachable anytime during the week. Feeling effective, useful and close to the customer is what I aim for all missions that I accept.</>,
+                    p: <>{h('Team working')} is always an experience that I enjoy. {h('Git, Slack or live coding')} are second nature to me. I make myself reachable anytime during the week. Feeling effective, useful and {h('close to the customer')} is what I aim for all missions I accept.</>,
                 },
             },
 
@@ -87,7 +87,7 @@ export const data = {
                 subtitle: <>Petite {y('introduction')}</>,
                 p: <>Ma personalité professionnelle se compose d'une carrière d'ingénieur du son dans le milieu très excitant des concerts et des studios d'enregistrements. Par le biais de formations, c'est en 2018 que je découvre le pouvoir magique du développeur informatique: "Maitriser le Digital"! Et c'est depuis 2019 que mes journées sont aujourd'hui consacrées à développer vos idées, dans l'entente, la bonne humeur et la performance.</>,
                 skillOne: {
-                    keyPoint: "un résultat de qualité.",
+                    keyPoint: "perceverance.",
                     p: <>Qu'on se le dise, un projet web peut etre parsemé d'embuches et de contraintes. Mon travail n'est pas seulement de vous remettre une {h('livraison de qualité')} dans un temps pré-défini, c'est aussi palier à {h('un certain nombre de defis')} qui naîtrons au fil du projets. Et ça, c'est mon dada... Je garantis {h('tous mes efforts')} pour un {h('résultats de qualité')} qui vous comblera.</>,
                 },
                 skillTwo: {

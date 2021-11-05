@@ -102,7 +102,7 @@ export const data = {
                     p: 'React JS, Next JS, GraphQL, REST API, Material UI',
                 },
                 ide: {
-                    line1: "Hello, je suis Cesar Martel, et vous êtes sur mon portfolio.",
+                    line1: "Bonjour, je suis Cesar Martel, et vous êtes sur mon portfolio.",
                     line2: 'Vous y trouverez mes compétences et une partie de mon travail.',
                     line3: 'Pour un nouveau projet, cliquez sur contact!',
                     com: 'clique pour voir la page',

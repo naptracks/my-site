@@ -7,7 +7,7 @@ import Link from "next/link";
 const Skills = ({data}) => {
 
     return (
-        <div className={s.skills}>
+        <div id={'skills'} className={s.skills}>
             <Subtitle cursor p={data.p}>
                 {data.subtitle}
             </Subtitle>

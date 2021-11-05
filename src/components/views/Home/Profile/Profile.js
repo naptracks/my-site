@@ -11,7 +11,7 @@ const Profile = ({data}) => {
 
 
     return (
-        <div>
+        <div id={'profile'}>
             <Subtitle cursor white p={data.p} img>
                 {data.subtitle}
             </Subtitle>

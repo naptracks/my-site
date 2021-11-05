@@ -48,7 +48,7 @@ const Portfolio = ({data, projects, lang}) => {
     }
 
     return (
-        <>
+        <div id={'portfolio'}>
             <Subtitle p={data.p} cursor>{data.subtitle}</Subtitle>
             <div className={s.btn}>
                 <Link href={'/contact'}>
@@ -84,7 +84,7 @@ const Portfolio = ({data, projects, lang}) => {
                     projects.map((project, i) => active === i && Content(project, i))
                 }
             </div>
-        </>
+        </div>
     )
 }
 

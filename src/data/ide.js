@@ -132,7 +132,7 @@ export const idePageThree = [
         line: <>{p('import')} {b('React')} {p('from')} {g("'react'")}</>
     },
     {
-        line: <>{p('import')} {bracketL} {b('getContact, getNiceReadableCode, getWorkDoneWithUpdates')} {bracketR} {p('from')} {g("'react'")}</>
+        line: <>{p('import')} {bracketL} {b('getContact, getNiceReadableCode, getWorkDoneWithUpdates')} {bracketR} {p('from')} {g("'./lib'")}</>
     },
     {line: ''},
     {

@@ -126,7 +126,7 @@ export const data = {
                     depuis 2020 que mes journées sont aujourd'hui consacrées à développer vos idées, dans l'entente, la
                     bonne humeur et la performance.</>,
                 skillOne: {
-                    keyPoint: "perceverance.",
+                    keyPoint: "percéverance.",
                     p: <>Qu'on se le dise, un projet web peut etre parsemé d'embuches et de contraintes. Mon travail
                         n'est pas seulement de vous remettre une {h('livraison de qualité')} dans un temps pré-défini,
                         c'est aussi palier à {h('un certain nombre de defis')} qui naîtrons au fil du projets. Et ça,
@@ -138,7 +138,7 @@ export const data = {
                     p: <>J'ai de la chance, j'ai des passions, et devinez quoi..., j'en ai fait ma profession. Je vous
                         propose {h('un code soigné,')} efficace et facilement {h('manipulable')} dans le temps. De
                         l'Application Next JS en {h('headless CMS')} avec un {h('Server-Side Rendering')}, au
-                        simple {h('One-Page')}, s'il vous plait, nourrissez ma passion! </>,
+                        simple One-Page, s'il vous plait, nourrissez ma passion! </>,
                 },
                 skillThree: {
                     keyPoint: "une bonne entente.",

@@ -59,7 +59,7 @@ export const data = {
             portfolio: {
                 subtitle: <>Let's {o('showcase')}</>,
                 p: <>Have a look at what I can do. You can find below some projects made with various technologies and complexities that I've been lucky to realised those last years.</>,
-                keyPoint: <>Select a {o('website')}.</>,
+                keyPoint: <>Select a {o('website')}</>,
                 project: {}
             },
             footer: {

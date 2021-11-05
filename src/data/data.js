@@ -121,9 +121,9 @@ export const data = {
             profile: {
                 subtitle: <>Petite {y('introduction')}</>,
                 p: <>Ma personalité professionnelle se compose d'une carrière d'ingénieur du son dans le milieu très
-                    excitant des concerts et des studios d'enregistrements. Par le biais de formations, c'est en 2018
+                    excitant des concerts et des studios d'enregistrements. Par le biais de formations, c'est en 2019
                     que je découvre le pouvoir magique du développeur informatique: "Maitriser le Digital"! Et c'est
-                    depuis 2019 que mes journées sont aujourd'hui consacrées à développer vos idées, dans l'entente, la
+                    depuis 2020 que mes journées sont aujourd'hui consacrées à développer vos idées, dans l'entente, la
                     bonne humeur et la performance.</>,
                 skillOne: {
                     keyPoint: "perceverance.",

@@ -60,7 +60,7 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
             </Head>
             <main ref={refMain}>
                 <Container isDark={true}>
-                    <Header data={dataUpdated.header} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
+                    <Header lang={lang} data={dataUpdated.header} status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
                 </Container>
                 <Container footer radius>
                     <Skills data={dataUpdated.skills}/>

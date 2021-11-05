@@ -6,7 +6,7 @@ import IDE from "../../../IDE";
 import Button from "../../../Button";
 import Socials from "../../../Socials";
 
-export const Header = ({data, status}) => {
+export const Header = ({data, status, lang}) => {
 
     return (
         <>
@@ -18,7 +18,7 @@ export const Header = ({data, status}) => {
                     <a><Button white>CONTACT</Button></a>
                 </Link>
             </div>
-            <IDE blur/>
+            <IDE lang={lang} blur/>
         </>
     )
 }

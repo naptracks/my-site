@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import {svg} from '../../data/svg';
 import {idePageOne, idePageTwo, idePageThree} from "../../data/ide";
 
-const IDE = ({blur}) => {
+const IDE = ({blur, lang}) => {
 
     const [active, setActive] = useState(1)
     const [anim, setAnim] = useState(1)
@@ -76,10 +76,10 @@ const IDE = ({blur}) => {
                 </button>
             </div>
             {
-                active === 1 && bodyOf(idePageOne)
+                active === 1 && bodyOf(idePageOne(lang))
             }
             {
-                active === 2 && bodyOf(idePageTwo)
+                active === 2 && bodyOf(idePageTwo(lang))
             }
             {
                 active === 3 && bodyOf(idePageThree)

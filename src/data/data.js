@@ -126,11 +126,11 @@ export const data = {
                     depuis 2020 que mes journées sont aujourd'hui consacrées à développer vos idées, dans l'entente, la
                     bonne humeur et la performance.</>,
                 skillOne: {
-                    keyPoint: "percéverance.",
+                    keyPoint: "percévérance.",
                     p: <>Qu'on se le dise, un projet web peut etre parsemé d'embuches et de contraintes. Mon travail
                         n'est pas seulement de vous remettre une {h('livraison de qualité')} dans un temps pré-défini,
                         c'est aussi palier à {h('un certain nombre de defis')} qui naîtrons au fil du projets. Et ça,
-                        c'est mon dada... Je garantis {h('tous mes efforts')} pour un {h('résultats de qualité')} qui
+                        c'est mon dada... Je garantis {h('tous mes efforts')} pour un résultat de qualité qui
                         vous comblera.</>,
                 },
                 skillTwo: {

@@ -10,7 +10,7 @@ const IDE = ({blur, lang}) => {
     const [anim, setAnim] = useState(1)
 
     useEffect(() => {
-        const time = setInterval(() => setAnim(t => t + 1), 780);
+        const time = setInterval(() => setAnim(t => t + 1), 680);
         return () => clearInterval(time)
     }, [active])
 

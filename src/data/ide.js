@@ -201,11 +201,11 @@ export const idePageThree = [
         margin: 1
     },
     {
-        line: <>{hookL}{o('div')} {o('className=')}{g('"contactButton"')}{hookR}</>,
+        line: <>{hookL}{o('div')} {o('className')}{g('="contactButton"')}{hookR}</>,
         margin: 2
     },
     {
-        line: <>{hookL}{o('button')} {o('onClick=')}{bracketL}{w(<>{parL}{parR}</>)} => {y('handleClick')}{parL}{parR}{bracketR}{hookR}{w('CONTACT')}{hookL}/{o('button')}{hookR}</>,
+        line: <>{hookL}{o('button')} {o('onClick')}{g('=')}{bracketL}{w(<>{parL}{parR} => </>)}{y('handleClick')}{parL}{parR}{bracketR}{hookR}{w('CONTACT')}{hookL}/{o('button')}{hookR}</>,
         margin: 3
     },
     {

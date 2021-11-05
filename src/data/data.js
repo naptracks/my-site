@@ -41,7 +41,7 @@ export const data = {
                 subtitle: <>Let me {y('introduce')} myself</>,
                 p: <>I come from the exciting live music and recording studios area, learning how to manage tight deadlines as well as high stress environment. In 2019 I studied the power of coding and how it can be a useful tool to product creation. Since then, I dedicate my days to developed an adaptive code which fits the best with your project.</>,
                 skillOne: {
-                    keyPoint: "singleness.",
+                    keyPoint: "perseverance.",
                     p: <>Let's say it, a web project can hide problems as well as restrictions. My work does not only consist of providing a {h('good quality product')} in a {h('pre-defined timing')}, it also has to face numbers of problems that pops up along the side. And this is what I love in this job. I guarantee you a {h('high quality code')} in ever technologies you need.</>,
                 },
 

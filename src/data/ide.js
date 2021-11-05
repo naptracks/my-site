@@ -43,7 +43,7 @@ export const idePageOne = (lang) => {
         {
             line: <>{hookL}{o('Header')}/{hookR}</>,
             margin: 3,
-            header: true
+            click2: true
         },
         {
             line: <><a href={'#skills'}>{hookL}{o('Skills')}/{hookR}</a> // {ide.com}</>,
@@ -115,7 +115,7 @@ export const idePageTwo = (lang) => {
         {
             line: <>{hookL}{o('ContactButton')}/{hookR}</>,
             margin: 3,
-            click: true
+            click3: true
         },
         {
             line: <>{hookL}{o('IDE')}/{hookR}</>,

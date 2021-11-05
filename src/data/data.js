@@ -120,10 +120,10 @@ export const data = {
             },
             profile: {
                 subtitle: <>Petite {y('introduction')}</>,
-                p: <>Ma personalité professionnelle se compose d'une carrière d'ingénieur du son dans le milieu très
+                p: <>Mes compétences professionnelle se compose d'une carrière d'ingénieur du son dans le milieu très
                     excitant des concerts et des studios d'enregistrements. Par le biais de formations, c'est en 2019
-                    que je découvre le pouvoir magique du développeur informatique: "Maitriser le Digital"! Et c'est
-                    depuis 2020 que mes journées sont aujourd'hui consacrées à développer vos idées, dans l'entente, la
+                    que se rajoute à celles-ci le pouvoir du développeur informatique: "la maîtrise du digital"! Et c'est
+                    depuis 2020 que mes journées sont aujourd'hui consacrées à développer vos idées numériques, dans l'entente, la
                     bonne humeur et la performance.</>,
                 skillOne: {
                     keyPoint: "percévérance.",
@@ -137,7 +137,7 @@ export const data = {
                     keyPoint: "je suis passionné.",
                     p: <>J'ai de la chance, j'ai des passions, et devinez quoi..., j'en ai fait ma profession. Je vous
                         propose {h('un code soigné,')} efficace et facilement {h('manipulable')} dans le temps. De
-                        l'Application Next JS en {h('headless CMS')} avec un {h('Server-Side Rendering')}, au
+                        l'application Next JS en {h('headless CMS')} avec un {h('Server-Side Rendering')}, au
                         simple One-Page, s'il vous plait, nourrissez ma passion! </>,
                 },
                 skillThree: {

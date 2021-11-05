@@ -29,10 +29,10 @@ const IDE = ({blur, lang}) => {
     }
 
 
-    const code = (lineNumber, code, margin, header, click) => {
+    const code = (lineNumber, code, margin, click2, click3) => {
         if(code.length === 0) return;
-        if(header) return <code onClick={() => setActive(2)} style={tabHeader} className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
-        if(click) return <code onClick={() => setActive(3)} style={tabHeader} className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
+        if(click2) return <code onClick={() => setActive(2)} style={tabClick} className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
+        if(click3) return <code onClick={() => setActive(3)} style={tabClick} className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
         if(margin === 1) return <code style={tabS} className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
          else if(margin === 2) return <code style={tabM} className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
          else if(margin === 3) return <code style={tabL} className={anim === lineNumber ? codeStyle : s.code}>{code}</code>
@@ -53,7 +53,7 @@ const IDE = ({blur, lang}) => {
                                 <div className={s.lineNumber}>
                                     {lineNumber}
                                 </div>
-                                {anim >= lineNumber && code(lineNumber, c.line, c.margin, c.header, c.click)}
+                                {anim >= lineNumber && code(lineNumber, c.line, c.margin, c.click2, c.click3)}
                             </div>
                     )
                 })
@@ -107,7 +107,7 @@ const tabL = {
     margin: '0'
 }
 
-const tabHeader = {
+const tabClick = {
     textIndent: '60px',
     margin: '0',
     cursor: 'pointer'

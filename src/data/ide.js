@@ -184,7 +184,6 @@ export const idePageThree = [
         line: <>{bracketR};</>,
     },
     {line: ''},
-    {line: ''}
 ]
 
 

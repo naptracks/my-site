@@ -44,15 +44,15 @@ export const idePageOne = [
         header: true
     },
     {
-        line: <a href={'#skills'}>{hookL}{o('Skills')}/{hookR}</a>,
+        line:  <><a href={'#skills'}>{hookL}{o('Skills')}/{hookR}</a> // click to see the page</>,
         margin: 3
     },
     {
-        line: <a href={'#profile'}>{hookL}{o('Profile')}/{hookR}</a>,
+        line: <><a href={'#profile'}>{hookL}{o('Profile')}/{hookR}</a> // click to see the page</>,
         margin: 3
     },
     {
-        line: <a href={'#portfolio'}>{hookL}{o('Portfolio')}/{hookR}</a>,
+        line: <><a href={'#portfolio'}>{hookL}{o('Portfolio')}/{hookR}</a> // click to see the page</>,
         margin: 3
     },
     {
@@ -169,7 +169,7 @@ export const idePageThree = [
         margin: 2
     },
     {
-        line: <>{hookL}{o('button')} {o('onClick=')}{bracketL}{w(<>{parL}{parR}</>)} => {y('handleClick')}{parL}{parR}{bracketR} {hookR}{w('CONTACT')}{hookL}/{o('button')}{hookR}</>,
+        line: <>{hookL}{o('button')} {o('onClick=')}{bracketL}{w(<>{parL}{parR}</>)} => {y('handleClick')}{parL}{parR}{bracketR}{hookR}{w('CONTACT')}{hookL}/{o('button')}{hookR}</>,
         margin: 3
     },
     {

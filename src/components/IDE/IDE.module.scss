@@ -1,16 +1,8 @@
 @import "../../styles/settings/_colors";
+@import "../../styles/settings/_dimensions";
 
 .ideContainer {
-  min-height: 30rem;
-  max-width: 60em;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  background-color: $dark-gray;
-  border: 1px solid $black;
-  border-radius: 20px;
-  overflow-x: scroll ;
+  display: none;
 }
 
 .headerContainer {
@@ -73,10 +65,15 @@
 .spaceBar {
   border-right: .15em solid $code;
 }
+
 // text animation
 @keyframes typing {
-  from {width: 0}
-  to {width: 98% }
+  from {
+    width: 0
+  }
+  to {
+    width: 98%
+  }
 }
 
 
@@ -108,6 +105,7 @@
   border-left: none;
   border-top: none;
 }
+
 .tabWithRadius {
   padding: .7rem 1rem;
   margin: 0;
@@ -117,10 +115,12 @@
   border-left: none;
   background-color: $light-black;
   border-top-left-radius: 20px;
+
   &:hover {
     background-color: $dark-gray;
   }
 }
+
 .tab {
   padding: .7rem 1rem;
   margin: 0;
@@ -129,8 +129,9 @@
   border-top: none;
   border-left: none;
   background-color: $light-black;
+
   &:hover {
-  background-color: $dark-gray;
+    background-color: $dark-gray;
   }
 }
 
@@ -140,3 +141,18 @@
   padding-left: .5rem;
 }
 
+@media (min-width: $tablet) {
+  .ideContainer {
+    display: inherit;
+    min-height: 30rem;
+    max-width: 60em;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: $dark-gray;
+    border: 1px solid $black;
+    border-radius: 20px;
+    overflow-x: scroll;
+  }
+}

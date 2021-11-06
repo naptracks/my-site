@@ -18,7 +18,8 @@ export const Header = ({data, status, lang}) => {
                     <a><Button white>CONTACT</Button></a>
                 </Link>
             </div>
-            <IDE lang={lang} blur/>
+
+                <IDE lang={lang} blur/>
         </>
     )
 }

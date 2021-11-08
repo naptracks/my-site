@@ -42,7 +42,7 @@ export const data = {
             skills: {
                 subtitle: <> My {o('Stack')} as a Full-Stack {o('Programmer')}</>,
                 p: <>Software engineering gives us the freedom we want to see. I'm Cesar Martel and I'm specialized
-                    in {a('React JS', svg.reactjs.href)}, the popular framework developed by facebook which make
+                    in {a('React JS', svg.reactjs.href)}, the popular framework developed by facebook which makes
                     possible a whole universe of complex user interfaces. And thanks to the
                     friendly {a('Next JS', svg.nextjs.href)}, new generations of websites has become faster and more
                     optimized than ever. I offer you my expertize on the most recent and robust technologies to give
@@ -65,7 +65,7 @@ export const data = {
 
                 skillTwo: {
                     keyPoint: "passionate.",
-                    p: <>I feel lucky, I have passions, and guess what..., it also is my job. I put all my passion into
+                    p: <>I feel lucky, I have passions, and guess what..., it is also my job. I put all my passion into
                         my code to {h('reach out your goals')}. From an {h('headless CMS')} app
                         with {h('Server-Side Rendering')} to the simple One-page, please feed my passion.</>,
                 },
@@ -81,7 +81,7 @@ export const data = {
             portfolio: {
                 subtitle: <>Let's {o('showcase')}</>,
                 p: <>Have a look at what I can do. You can find below some projects made with various technologies and
-                    complexities that I've been lucky to realised those last years.</>,
+                    complexities that I've been lucky to realise those last years.</>,
                 keyPoint: <>Select a {o('website')}</>,
                 project: {}
             },
@@ -116,20 +116,20 @@ export const data = {
                     populaire framework développé par facebook permettant de créer des interfaces utilisateurs
                     complexes. Couplé à la surcouche {a('Next JS', svg.nextjs.href)}, la performance du web n'aura
                     jamais été aussi aboutit. Je vous propose mon expertise sur un panel de technologies les plus
-                    mordernes pour réaliser de facon optimal tous vos projets en ligne.</>,
+                    mordernes pour réaliser de façon optimal tous vos projets en ligne.</>,
             },
             profile: {
                 subtitle: <>Petite {y('introduction')}</>,
-                p: <>Mes compétences professionnelle se compose d'une carrière d'ingénieur du son dans le milieu très
+                p: <>Mes compétences professionnelles se composent d'une carrière d'ingénieur du son dans le milieu très
                     excitant des concerts et des studios d'enregistrements. Par le biais de formations, c'est en 2019
-                    que se rajoute à celles-ci le pouvoir du développeur informatique: "la maîtrise du digital"! Et c'est
+                    que se rajoute à celles-ci le pouvoir du développeur informatique: "la maîtrise du digital". Et c'est
                     depuis 2020 que mes journées sont aujourd'hui consacrées à développer vos idées numériques, dans l'entente, la
                     bonne humeur et la performance.</>,
                 skillOne: {
                     keyPoint: "percévérance.",
                     p: <>Qu'on se le dise, un projet web peut etre parsemé d'embuches et de contraintes. Mon travail
                         n'est pas seulement de vous remettre une {h('livraison de qualité')} dans un temps pré-défini,
-                        c'est aussi palier à {h('un certain nombre de defis')} qui naîtrons au fil du projets. Et ça,
+                        c'est aussi palier à {h('un certain nombre de defis')} qui naîtront au fil du projets. Et ça,
                         c'est mon dada... Je garantis {h('tous mes efforts')} pour un résultat de qualité qui
                         vous comblera.</>,
                 },
@@ -194,7 +194,7 @@ export const data = {
                 },
                 subtitle: {
                     h1: <>C'est ici que tout {o('commence')}.</>,
-                    p: "Je suis disponible en semaine de 9h à 19h. J'essaie au mieux de vous répondre dans les plus bref délais."
+                    p: "Je suis disponible en semaine de 9h à 19h. Je garantie une reponse dans les plus brefs délais."
                 },
                 mailButton: 'Envoyer un em@il',
             },

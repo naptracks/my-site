@@ -33,7 +33,8 @@ const Stack = () => {
         ws,
         git,
         wp,
-        vsc
+        vsc,
+        mongodb
     } = svg
 
     return (
@@ -64,6 +65,7 @@ const Stack = () => {
                 {techno(heroku.svg, heroku.name, heroku.href)}
                 {techno(firebase.svg, firebase.name, firebase.href)}
                 {techno(vercel.svg, vercel.name, vercel.href)}
+                {techno(mongodb.svg, mongodb.name, mongodb.href)}
             </div>
             <KeyPoint bar>styles<span className={color.orange}>.</span></KeyPoint>
             <div className={s.content}>

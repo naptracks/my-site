@@ -134,7 +134,7 @@ export const data = {
                         vous comblera.</>,
                 },
                 skillTwo: {
-                    keyPoint: "je suis passionné.",
+                    keyPoint: "passionné.",
                     p: <>J'ai de la chance, j'ai des passions, et devinez quoi..., j'en ai fait ma profession. Je vous
                         propose {h('un code soigné,')} efficace et facilement {h('manipulable')} dans le temps. De
                         l'application Next JS en {h('headless CMS')} avec un {h('Server-Side Rendering')}, au

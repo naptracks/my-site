@@ -14,8 +14,8 @@ const Socials = ({small, orange}) => {
         <div className={styles}>
             <a href={'https://www.linkedin.com/in/cesar-martel-250309157/'} target={'_blank'}> {svg.linkedIn} </a>
             <a href={'https://github.com/naptracks'} target={'_blank'}> {svg.github} </a>
-            <a href={'https://twitter.com/CesarMartel10'} target={'_blank'}> {svg.tweeter} </a>
             <a href={'https://stackoverflow.com/users/10972145/mc-code'} target={'_blank'}> {svg.stackOverFlow} </a>
+            <a  href={svg.codingGame.href} target={'_blank'}> {svg.codingGame.svg} </a>
         </div>
     )
 }

@@ -193,7 +193,7 @@ export const data = {
                 },
                 subtitle: {
                     h1: <>C'est ici que tout {o('commence')}.</>,
-                    p: "En tant qu'empatique idéaliste, je tends à croire que coder est un savoir utile pour changer le monde et le rendre meilleur. Je suis constament en recherche de projects pour lesquelles je pourrai être fier d'avoir participé. Contactez moi avec les coordonées ci dessous. À bientôt!"
+                    p: "En tant qu'empatique idéaliste, je tends à croire que coder est un savoir utile pour changer le monde et le rendre meilleur. Je suis constament en recherche de projets pour lesquelles je pourrai être fier d'avoir participé. Contactez moi avec les coordonées ci dessous. À bientôt!"
                 },
                 mailButton: 'Envoyer un em@il',
             },

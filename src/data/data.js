@@ -65,16 +65,15 @@ export const data = {
 
                 skillTwo: {
                     keyPoint: "passionate.",
-                    p: <>I feel lucky, I have passions, and guess what..., it is also my job. I put all my passion into
-                        my code to {h('reach out your goals')}. From a {h('headless CMS')} app
-                        with {h('Server-Side Rendering')} to the simple One-page, please feed my passion.</>,
+                    p: <>I feel lucky, I have passions, and it is also my job. And "Passion" to me means spending a lot of energy to {h('reach a goal')}. From a {h('headless CMS')} app
+                        with {h('Server-Side Rendering')} to the simple One-page, I will make your project alive with passion.</>,
                 },
 
                 skillThree: {
                     keyPoint: "easy to work with.",
-                    p: <>{h('Team working')} is always an experience that I enjoy. {h('Git, Slack or live coding')} are
-                        second nature to me. I make myself reachable anytime during the week. Feeling effective, useful
-                        and {h('close to the customer')} is what I aim for all missions I accept.</>,
+                    p: <>{h('Team working')} is always an experience that I enjoy. {h('Git, Gitflow, GithubFlow, Slack or live coding')} are
+                        second nature to me. I make myself reachable anytime during the week as you feel it necessary. Feeling effective, useful
+                        and {h('close to the client')} is what I aim for all missions I accept.</>,
                 },
             },
 
@@ -115,42 +114,41 @@ export const data = {
                     m'appelle Cesar Martel et je suis spécialisé en {a('React JS', svg.reactjs.href)}, le très
                     populaire framework développé par facebook permettant de créer des interfaces utilisateurs
                     complexes. Couplé à la surcouche {a('Next JS', svg.nextjs.href)}, la performance du web n'aura
-                    jamais été aussi aboutit. Je vous propose mon expertise sur un panel de technologies les plus
+                    jamais été aussi abouti. Je vous propose mon expertise sur un panel de technologies les plus
                     mordernes pour réaliser de façon optimal tous vos projets en ligne.</>,
             },
             profile: {
                 subtitle: <>Petite {y('introduction')}</>,
                 p: <>Mes compétences professionnelles se composent d'une carrière d'ingénieur du son dans le milieu très
                     excitant des concerts et des studios d'enregistrements. Par le biais de formations, c'est en 2019
-                    que se rajoute à celles-ci le pouvoir du développeur informatique: "la maîtrise du digital". Et c'est
+                    que se rajoute à celles-ci le pouvoir de coder. Et c'est
                     depuis 2020 que mes journées sont aujourd'hui consacrées à développer vos idées numériques, dans l'entente, la
                     bonne humeur et la performance.</>,
                 skillOne: {
                     keyPoint: "percévérance.",
                     p: <>Qu'on se le dise, un projet web peut etre parsemé d'embuches et de contraintes. Mon travail
                         n'est pas seulement de vous remettre une {h('livraison de qualité')} dans un temps pré-défini,
-                        c'est aussi palier à {h('un certain nombre de defis')} qui naîtront au fil du projets. Et ça,
-                        c'est mon dada... Je garantis {h('tous mes efforts')} pour un résultat de qualité qui
+                        c'est aussi palier à {h('un certain nombre de defis')} qui naîtront au fil du projet. Je garantis {h('tous mes efforts')} au service d'un résultat de qualité qui
                         vous comblera.</>,
                 },
                 skillTwo: {
                     keyPoint: "passionné.",
-                    p: <>J'ai de la chance, j'ai des passions, et devinez quoi..., j'en ai fait ma profession. Je vous
-                        propose {h('un code soigné,')} efficace et facilement {h('manipulable')} dans le temps. De
+                    p: <>Ma passion, j'en ai fait ma profession. Continuellement en train de me perfectionner, je vous
+                        propose l'expertise d'un passionné: {h('un code soigné,')} efficace et facilement {h('manipulable')} dans le temps. De
                         l'application Next JS en {h('headless CMS')} avec un {h('Server-Side Rendering')}, au
-                        simple One-Page, s'il vous plait, nourrissez ma passion! </>,
+                        simple One-Page, je suis ouvert à tous projets. </>,
                 },
                 skillThree: {
                     keyPoint: "une bonne entente.",
-                    p: <>Je maitrise les outils du {h('"team working"')}. Git, Slack et le live coding sont une deuxième
+                    p: <>Je maitrise les outils du {h('"team working"')}. Git, Gitflow, GithubFlow, Slack et le live coding sont une deuxième
                         nature pour moi. Je suis disponible à tout moment de la semaine en visio ou par téléphone. Me
                         sentir {h('efficace')}, {h('utile')} et {h('proche du client')} sont des objectifs que
                         j'applique du début à la fin dans toutes mes missions.</>,
                 },
             },
             portfolio: {
-                subtitle: <>Un petit {o('apperçu')}</>,
-                p: "Je vous propose de jetter un oeil sur les differents projets que j'ai eu la chance de réaliser ces dernières années.",
+                subtitle: <>Un petit {o('aperçu')}</>,
+                p: "Je vous propose de jeter un oeil sur les differents projets que j'ai eu la chance de réaliser ces dernières années.",
                 keyPoint: <>Selectionne un {o('site')}</>,
             },
             footer: {
@@ -169,7 +167,8 @@ export const data = {
                 },
                 subtitle: {
                     h1: <>And this is how {o('it started')}.</>,
-                    p: "I work well, I work fast and I love what I'm doing. Contact me to talk about your project."
+                    p: "\n" +
+                        "As an empathic idealist I tend to think that coding is a good tool to make the world a better place. And I always search forward to the next exciting project that I could be proud of being part of it. Please, reach me with those contact details below. See you soon!"
                 },
                 mailButton: 'Send an em@il',
             },
@@ -194,7 +193,7 @@ export const data = {
                 },
                 subtitle: {
                     h1: <>C'est ici que tout {o('commence')}.</>,
-                    p: "Je suis disponible en semaine de 9h à 19h. Je garantie une reponse dans les plus brefs délais."
+                    p: "En tant qu'empatique idéaliste, je tends à croire que coder est un savoir utile pour changer le monde et le rendre meilleur. Je suis constament en recherche de projects pour lesquelles je pourrai être fier d'avoir participé. Contactez moi avec les coordonées ci dessous. À bientôt!"
                 },
                 mailButton: 'Envoyer un em@il',
             },

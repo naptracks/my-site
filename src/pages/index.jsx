@@ -51,7 +51,7 @@ export default function Home({isAvailable, projectOne, projectTwo, projectThree,
     return (
         <>
             <Head>
-                <title>Cesar Martel</title>
+                <title>Cesar Martel Developer</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>

@@ -17,7 +17,7 @@ const ContactPage = ({isAvailable, location}) => {
     const lang = useLang()
     const dataUpdated = lang === 'eng' ? data.contact.eng : data.contact.fr
     const statusUpdated = isAvailable ? status.available : status.busy
-    const title = lang === 'eng' ? 'Contact me' : 'Me Contacter';
+    const title = lang === 'eng' ? 'Get-In-Touch CesarMartel' : 'Contact Cesar Martel';
 
 
     return (

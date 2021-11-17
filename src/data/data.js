@@ -168,7 +168,7 @@ export const data = {
                 subtitle: {
                     h1: <>And this is how {o('it started')}.</>,
                     p: "\n" +
-                        "As an empathic idealist I tend to think that coding is a good tool to make the world a better place. And I always search forward to the next exciting project that I could be proud of being part of it. Please, reach me with those contact details below. See you soon!"
+                        "As an empathic idealist I tend to think that coding is a good tool to make the world a better place. And I always look forward to the next exciting project. Please, reach me with those contact details below. See you soon!"
                 },
                 mailButton: 'Send an em@il',
             },

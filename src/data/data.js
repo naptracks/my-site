@@ -78,8 +78,8 @@ export const data = {
 
             portfolio: {
                 subtitle: <>Let's {o('showcase')}</>,
-                p: <>Have a look at what I can do. You can find below some projects made with various technologies and
-                    complexities that I've been lucky to realise those last years.</>,
+                p: <>Take a look at my portfolio. You can find below some projects made with various technologies and
+                    complexities. Some have been built upon an already existing project, some were created from scratch.</>,
                 keyPoint: <>Select a {o('website')}</>,
                 project: {}
             },
@@ -147,7 +147,7 @@ export const data = {
             },
             portfolio: {
                 subtitle: <>Un petit {o('aperçu')}</>,
-                p: "Je vous propose de jeter un oeil sur les differents projets que j'ai eu la chance de réaliser ces dernières années.",
+                p: "Je vous propose de jeter un oeil sur mes dernières réalisations. Certains ont été créé sur une base déjà existante, d'autres ont été développées from scratch.",
                 keyPoint: <>Selectionne un {o('site')}</>,
             },
             footer: {
@@ -166,8 +166,7 @@ export const data = {
                 },
                 subtitle: {
                     h1: <>And this is how {o('it started')}.</>,
-                    p: "\n" +
-                        "As an empathic idealist I tend to think that coding is a good tool to make the world a better place. And I always look forward to the next exciting project. Please, reach me with those contact details below. See you soon!"
+                    p: <>As an empathic idealist I have tendency to think that coding is a good tool to make the world a better place. And I always look forward to the next exciting project. Being specialized in React JS, I tend to like working on {o('Front-End React JS')} missions. You can reach me with the contact details below.</>
                 },
                 mailButton: 'Send an em@il',
             },
@@ -192,7 +191,7 @@ export const data = {
                 },
                 subtitle: {
                     h1: <>C'est ici que tout {o('commence')}.</>,
-                    p: "En tant qu'empatique idéaliste, je tends à croire que coder est un savoir utile pour changer le monde et le rendre meilleur. Je suis constament en recherche de projets pour lesquelles je pourrai être fier d'avoir participé. Contactez moi avec les coordonées ci dessous. À bientôt!"
+                    p: <>M'étant spécialisé dans ce framework j'ai une préférence pour des missions {o('Front-End React JS')} mais je reste ouvert à toute proposition de projet. Vous pouvez me joindre en utilisant mes coordonnées ci-dessous.</>
                 },
                 mailButton: 'Envoyer un em@il',
             },

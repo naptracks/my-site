@@ -39,10 +39,10 @@ const ContactPage = ({isAvailable, location}) => {
                     <Header location={location} data={dataUpdated.header}/>
                 </Container>
                 <Container isDark={true} footer>
-                    <div className={s.formContainer}>
-                        <KeyPoint white>{dataUpdated.footer.keyPoint}</KeyPoint>
-                        <Form data={dataUpdated.footer.form}/>
-                    </div>
+                    {/*<div className={s.formContainer}>*/}
+                    {/*    <KeyPoint white>{dataUpdated.footer.keyPoint}</KeyPoint>*/}
+                    {/*    <Form data={dataUpdated.footer.form}/>*/}
+                    {/*</div>*/}
                     <Footer withoutImg data={dataUpdated.footer}
                             status={lang === 'eng' ? statusUpdated.eng : statusUpdated.fr}/>
                 </Container>

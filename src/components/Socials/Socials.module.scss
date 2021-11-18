@@ -1,4 +1,5 @@
 @import '../../styles/settings/_colors';
+@import '../../styles/settings/_dimensions';
 
 .social {
   display: flex;
@@ -6,13 +7,16 @@
   align-items: center;
   margin-bottom: 3rem;
   margin-top: 3rem;
+
   a {
-    margin: 0 1.5rem;
+    margin: 0 .6rem;
   }
+
   svg {
     width: 2.2rem;
     height: 2.2rem;
     fill: $code;
+
     &:hover {
       fill: $code-yellow
     }
@@ -20,25 +24,46 @@
 }
 
 .small {
-  margin: 0;
-  svg {
-    width: 1.8rem !important;
-    height: 1.8rem !important;
-  }
-  a {
-    margin: 0 1rem 0 0;
-  }
+  display: none;
 }
 
 .orange {
- svg {
-     &:hover {
-       fill: $code-orange !important;
-     }
+  svg {
+    &:hover {
+      fill: $code-orange !important;
+    }
   }
 }
 
-.cg {
-  fill: $code;
-  width: 7.2rem !important;
+.custom {
+  margin: 0 .3rem 0 0 !important;
+
+  svg {
+    fill: $code;
+    width: 7.2rem !important;
+  }
+}
+
+@media (min-width: $tablet) {
+  .small {
+    display: inherit;
+    margin: 0;
+
+    svg {
+      width: 1.8rem !important;
+      height: 1.8rem !important;
+    }
+
+    a {
+      margin: 0 1rem 0 0 !important;
+    }
+  }
+  .custom {
+    margin: 0 1rem 0 0 !important;
+  }
+  .social {
+    a {
+      margin: 0 1rem;
+    }
+  }
 }

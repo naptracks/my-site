@@ -1,5 +1,4 @@
 import s from "../components/IDE/IDE.module.scss";
-import socials from "../components/Socials/Socials.module.scss"
 
 
 //svg object:
@@ -791,7 +790,7 @@ c826 -826 1502 -1504 1502 -1507 0 -3 -1964 -5 -4365 -5 -2401 0 -4365 2
 
     codingGame: {
         svg: <svg width="132px" height="18px" viewBox="0 0 132 18" xmlns="http://www.w3.org/2000/svg"
-                  className={socials.cg}>
+        >
             <g id="final"  >
                 <g id="header-" transform="translate(-30.000000, -21.000000)">
                     <g id="CodinGame_Logo_Final_Full" transform="translate(30.000000, 21.000000)">
@@ -843,7 +842,7 @@ c826 -826 1502 -1504 1502 -1507 0 -3 -1964 -5 -4365 -5 -2401 0 -4365 2
         name: 'Coding Game',
         href: 'https://www.codingame.com/profile/517fdcad8b21f892fcd7d6dde8284e0a9225304'
     },
-    malt: <svg className={socials.cg} version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+    malt: <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                x="0px" y="0px" viewBox="0 0 800 277">
         <g>
 	<path className="st0"

@@ -1,4 +1,3 @@
-import color from '../styles/colors.module.scss';
 import {svg} from './svg'
 import {
     y,
@@ -213,10 +212,10 @@ export const data = {
 
 
 //edit status
-export const ENG_AVAILABLE = 'ACTUALLY AVAILABLE'
-export const ENG_BUSY = 'ACTUALLY BUSY'
-export const FR_AVAILABLE = 'ACTUELLEMENT DISPONIBLE'
-export const FR_BUSY = 'ACTUELLEMENT OCCUPÉ'
+export const ENG_AVAILABLE = 'OPEN TO WORK'
+export const ENG_BUSY = 'ACTUALLY WORKING'
+export const FR_AVAILABLE = 'OPEN TO WORK'
+export const FR_BUSY = 'ACTUELLEMENT SUR UN PROJET'
 
 export const status = {
     available: {

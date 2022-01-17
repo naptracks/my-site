@@ -97,7 +97,7 @@ export const data = {
                 },
                 title: {
                     h1: <>Développeur {y('Web')}</>,
-                    p: 'React JS, Next JS, GraphQL, REST API, Material UI',
+                    p: 'React JS, Node JS, GraphQL, REST API, Material UI',
                 },
                 ide: {
                     line1: "Bonjour, je suis Cesar Martel, et vous êtes sur mon portfolio.",

@@ -1,11 +1,11 @@
 import {svg} from './svg'
 import {
-    y,
-    o,
-    p,
-    g,
-    a,
-    h
+    y, // yellow
+    o, // orange
+    p, // purple
+    g, // green
+    a, // link a(href, name)
+    h // highlight on hover
 } from './tools'
 
 
@@ -112,42 +112,32 @@ export const data = {
                 p: <>L'ingénieurie informatique nous offre la liberté de conçevoir le monde que l'on souhaite voir. Je
                     m'appelle Cesar Martel et je suis spécialisé en {a('React JS', svg.reactjs.href)}, le très
                     populaire framework développé par facebook permettant de créer des interfaces utilisateurs
-                    complexes. Couplé à la surcouche {a('Next JS', svg.nextjs.href)}, la performance du web n'aura
-                    jamais été aussi abouti. Je vous propose mon expertise sur un panel de technologies les plus
-                    mordernes pour réaliser de façon optimal tous vos projets en ligne.</>,
+                    complexes. Je vous propose mon expertise sur un panel de technologies les plus
+                    mordernes pour réaliser tous vos projets en ligne.</>,
             },
             profile: {
                 subtitle: <>Petite {y('introduction')}</>,
                 p: <>Mes compétences professionnelles se composent d'une carrière d'ingénieur du son dans le milieu très
-                    excitant des concerts et des studios d'enregistrements. Par le biais de formations, c'est en 2019
-                    que se rajoute à celles-ci le pouvoir de coder. Et c'est
-                    depuis 2020 que mes journées sont aujourd'hui consacrées à développer vos idées numériques, dans l'entente, la
-                    bonne humeur et la performance.</>,
+                    excitant des concerts et des studios d'enregistrements. . C'est depuis 2021 que mes journées sont aujourd'hui consacrées à développer vos idées numériques, dans l'entente etla performance.</>,
                 skillOne: {
                     keyPoint: "percévérance.",
-                    p: <>Qu'on se le dise, un projet web peut etre parsemé d'embuches et de contraintes. Mon travail
+                    p: <>Qu'on se le dise, un projet web peut être parsemé d'embuches et de contraintes. Mon travail
                         n'est pas seulement de vous remettre une {h('livraison de qualité')} dans un temps pré-défini,
-                        c'est aussi palier à {h('un certain nombre de defis')} qui naîtront au fil du projet. Je garantis {h('tous mes efforts')} au service d'un résultat de qualité qui
-                        vous comblera.</>,
+                        c'est aussi palier à {h('un certain nombre de defis')} qui naîtront au fil du projet.</>
                 },
                 skillTwo: {
                     keyPoint: "passionné.",
-                    p: <>Ma passion, j'en ai fait ma profession. Continuellement en train de me perfectionner, je vous
-                        propose l'expertise d'un passionné: {h('un code soigné,')} efficace et facilement {h('manipulable')} dans le temps. De
-                        l'application Next JS en {h('headless CMS')} avec un {h('Server-Side Rendering')}, au
-                        simple One-Page, je suis ouvert à tous projets. </>,
+                    p: <>Continuellement en train de me perfectionner, je vous
+                        propose l'expertise d'un passionné: {h('un code soigné,')} efficace et facilement {h('manipulable')} dans le temps.</>,
                 },
                 skillThree: {
                     keyPoint: "une bonne entente.",
-                    p: <>Je maitrise les outils du {h('"team working"')}. Git, Gitflow, GithubFlow, Slack et le live coding sont une deuxième
-                        nature pour moi. Je suis disponible à tout moment de la semaine en visio ou par téléphone. Me
-                        sentir {h('efficace')}, {h('utile')} et {h('proche du client')} sont des objectifs que
-                        j'applique du début à la fin dans toutes mes missions.</>,
+                    p: <>Je maîtrise les outils du {h('"team working"')}: Git, Gitflow, Methode Agile, Slack, le live coding.</>,
                 },
             },
             portfolio: {
                 subtitle: <>Un petit {o('aperçu')}</>,
-                p: "Je vous propose de jeter un oeil sur mes dernières réalisations. Certains ont été créé sur une base déjà existante, d'autres ont été développées from scratch.",
+                p: "Voici mes dernières réalisations. Certaines ont été créées sur une base déjà existante, d'autres ont été développées from scratch.",
                 keyPoint: <>Selectionne un {o('site')}</>,
             },
             footer: {
@@ -166,7 +156,7 @@ export const data = {
                 },
                 subtitle: {
                     h1: <>And this is how {o('it started')}.</>,
-                    p: <>As an empathic idealist I have tendency to think that coding is a good tool to make the world a better place. And I always look forward to the next exciting project. Being specialized in React JS, I tend to like working on {o('Front-End React JS')} missions. You can reach me with the contact details below.</>
+                    p: <>As an empathic idealist I have tendency to think that coding is a good tool to make the world a better place. And I always look forward to the next exciting project. You can reach me with the contact details below.</>
                 },
                 mailButton: 'Send an em@il',
             },
@@ -191,7 +181,7 @@ export const data = {
                 },
                 subtitle: {
                     h1: <>C'est ici que tout {o('commence')}.</>,
-                    p: <>M'étant spécialisé dans ce framework j'ai une préférence pour des missions {o('Front-End React JS')} mais je reste ouvert à toute proposition de projet. Vous pouvez me joindre en utilisant mes coordonnées ci-dessous.</>
+                    p: <>Vous pouvez me joindre en utilisant mes coordonnées ci-dessous.</>
                 },
                 mailButton: 'Envoyer un em@il',
             },

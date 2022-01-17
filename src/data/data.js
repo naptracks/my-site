@@ -42,9 +42,7 @@ export const data = {
                 subtitle: <> My {o('Stack')} as a Full-Stack {o('Programmer')}</>,
                 p: <>Software engineering gives us the freedom we want to see. I'm Cesar Martel and I'm specialized
                     in {a('React JS', svg.reactjs.href)}, the popular framework developed by facebook which makes
-                    possible a whole universe of complex user interfaces. And thanks to the
-                    friendly {a('Next JS', svg.nextjs.href)}, new generations of websites has become faster and more
-                    optimized than ever. I offer you my expertize on the most recent and robust technologies to give
+                    possible a whole universe of complex user interfaces. I offer you my expertize on the most recent and robust technologies to give
                     life to your projects. Get in touch!</>,
             },
 

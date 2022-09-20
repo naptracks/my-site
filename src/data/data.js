@@ -40,37 +40,32 @@ export const data = {
 
             skills: {
                 subtitle: <> My {o('Stack')} as a Full-Stack {o('Programmer')}</>,
-                p: <>Software engineering gives us the freedom we want to see. I'm Cesar Martel and I'm specialized
-                    in {a('React JS', svg.reactjs.href)}, the popular framework developed by facebook which makes
-                    possible a whole universe of complex user interfaces. I offer you my expertize on the most recent and robust technologies to give
-                    life to your projects. Get in touch!</>,
+                p: <>I'm Cesar Martel and I'm a FullStack Web Developer specialized
+                    in {a('React JS', svg.reactjs.href)}, {a('Next JS', svg.nextjs.href)} and {a('Node JS', svg.nodejs.href)}.</>,
             },
 
             profile: {
                 subtitle: <>Let me {y('introduce')} myself</>,
-                p: <>I come from the exciting live music and recording studios area, learning how to manage tight
-                    deadlines as well as high stress environment. In 2019 I studied the power of coding and how it can
-                    be a useful tool to product creation. Since then, I dedicate my days to develop an adaptive code
-                    which fits the best with your project.</>,
+                p: <>Having worked in the exciting live music environment, I developed a thorough understanding of{h(" managing tight deadlines")}, efficient problem-solving skills and understanding of technical tools and systems as well as a{h(" budget conscious approach")} to product creation.</>,
                 skillOne: {
-                    keyPoint: "perseverance.",
-                    p: <>Let's say it, a web project can hide problems as well as restrictions. My work does not only
-                        consist of providing a {h('good quality product')} in a {h('pre-defined timing')}, it also has
-                        to face numbers of problems that pops up along the side. And this is what I love in this job. I
-                        guarantee you a {h('high quality code')} in ever technologies you need.</>,
+                    keyPoint: "qualities.",
+                    p: <>✓ French Native
+                    ✓ Fluent English
+                    {h("✓ Analytical Thinker")}
+                    {h("✓ Priority Management ✓ Fast Learner")}
+                    {h("✓ Highly Adaptable")}
+                    ✓ Great with people</>,
                 },
 
                 skillTwo: {
                     keyPoint: "passionate.",
-                    p: <>I feel lucky, I have passions, and it is also my job. And "Passion" to me means spending a lot of energy to {h('reach a goal')}. From a {h('headless CMS')} app
-                        with {h('Server-Side Rendering')} to the simple One-page, I will make your project alive with passion.</>,
+                    p: <>Enthusiast and passionate, I’m looking forward now to join a UK based company {h("to work on meaningful large scale projects")} as an entry-level / mid- level full-stack web developer.
+                    </>,
                 },
 
                 skillThree: {
-                    keyPoint: "easy to work with.",
-                    p: <>{h('Team working')} is always an experience that I enjoy. {h('Git, Gitflow, GithubFlow, Slack or live coding')} are
-                        second nature to me. I make myself reachable anytime during the week as you feel it necessary. Feeling effective, useful
-                        and {h('close to the client')} is what I aim for all missions I accept.</>,
+                    keyPoint: "easy going.",
+                    p: <>{h('Team working')} is always an experience that I enjoy.</>,
                 },
             },
 

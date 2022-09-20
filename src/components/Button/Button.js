@@ -2,7 +2,7 @@ import s from './Button.module.scss';
 import cn from 'classnames';
 import {svg} from '../../data/svg'
 
-const Button = ({children, white, black, onClick, cian, className}) => {
+const Button = ({children, white, black, onClick, cian, className, style}) => {
 
     const styles = cn({
         [s.btn]: true,
@@ -13,7 +13,7 @@ const Button = ({children, white, black, onClick, cian, className}) => {
     })
 
     return (
-       <button onClick={onClick} className={styles}><p>{children} {svg.arrow}</p></button>
+       <button onClick={onClick} style={style} className={styles}><p>{children} {svg.arrow}</p></button>
     )
 }
 

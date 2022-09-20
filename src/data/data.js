@@ -71,7 +71,7 @@ export const data = {
 
             portfolio: {
                 subtitle: <>Let's {o('showcase')}</>,
-                p: <>Take a look at my portfolio. You can find below some projects made with various technologies and
+                p: <>Have a look at my portfolio. You'll find below some projects I made with various technologies and
                     complexities. Some have been built upon an already existing project, some were created from scratch.</>,
                 keyPoint: <>Select a {o('website')}</>,
                 project: {}

@@ -54,9 +54,9 @@ const Portfolio = ({data, projects, lang}) => {
                 <Link href={'/contact'}>
                     <a><Button black>CONTACT</Button></a>
                 </Link>
-                <Link href={"http://www.portfolio-headless.link/wp-content/uploads/2022/09/CesarMartel_FullStackDev_2022.pdf"}>
+                {/* <Link href={"http://www.portfolio-headless.link/wp-content/uploads/2022/09/CesarMartel_FullStackDev_2022.pdf"}>
                     <a target={"_blank"} download><Button style={{marginLeft: "1rem"}}  withe>DOWNLOAD MY CV</Button> </a>
-                </Link>
+                </Link> */}
             </div>
             <div className={s.container}>
                 <div className={s.col}>

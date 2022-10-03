@@ -148,8 +148,8 @@ export const data = {
                     button: 'GO FRANCAIS'
                 },
                 subtitle: {
-                    h1: <>And this is how {o('it started')}.</>,
-                    p: <>As an empathic idealist I have tendency to think that coding is a good tool to make the world a better place. And I always look forward to the next exciting project. You can reach me with the contact details below.</>
+                    h1: <>How to {o('reach me')}?</>,
+                    p: <>As an empathic idealist I have tendency to think that coding is a good tool to make the world a better place. And I always look forward to the next meaningfull project. You can reach me with contact details below.</>
                 },
                 mailButton: 'Send an em@il',
             },

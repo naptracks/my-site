@@ -6,6 +6,7 @@ import {useState} from "react";
 import KeyPoint from "../../../KeyPoint/KeyPoint";
 import Paragraph from "../../../Paragraph";
 import {svg} from '../../../../data/svg';
+import { cv } from '../../../../data/data';
 
 const Portfolio = ({data, projects, lang}) => {
     const [active, setActive] = useState(0)
@@ -54,7 +55,7 @@ const Portfolio = ({data, projects, lang}) => {
                 <Link href={'/contact'}>
                     <a><Button black>CONTACT</Button></a>
                 </Link>
-                <Link href={"http://www.portfolio-headless.link/wp-content/uploads/2022/09/CesarMartel_FullStackDev_2022.pdf"}>
+                <Link href={cv}>
                     <a target={"_blank"} download><Button style={{marginLeft: "1rem"}}  withe>DOWNLOAD MY CV</Button> </a>
                 </Link>
             </div>

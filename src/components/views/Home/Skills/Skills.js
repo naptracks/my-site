@@ -3,6 +3,7 @@ import Subtitle from "../../../Subtitle";
 import Stack from "../../../Stack";
 import Button from "../../../Button";
 import Link from "next/link";
+import { cv } from '../../../../data/data';
 
 const Skills = ({data}) => {
 
@@ -15,7 +16,7 @@ const Skills = ({data}) => {
                 <Link href={'/contact'}>
                     <a> <Button black>CONTACT</Button></a>
                 </Link>
-                <Link href={"http://www.portfolio-headless.link/wp-content/uploads/2022/09/CesarMartel_FullStackDev_2022.pdf"}>
+                <Link href={cv}>
                     <a target={"_blank"} download><Button style={{marginLeft: "1rem"}}  withe>DOWNLOAD MY CV</Button> </a>
                 </Link>
             </div>

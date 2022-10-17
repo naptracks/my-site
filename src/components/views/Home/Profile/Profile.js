@@ -5,6 +5,7 @@ import KeyPoint from "../../../KeyPoint/KeyPoint";
 import {svg} from '../../../../data/svg';
 import Button from "../../../Button";
 import Socials from "../../../Socials";
+import { cv } from "../../../../data/data";
 
 
 const Profile = ({data}) => {
@@ -20,7 +21,7 @@ const Profile = ({data}) => {
                 <Link href={'/contact'}>
                     <a><Button white>CONTACT</Button> </a>
                 </Link>
-                <Link href={"http://www.portfolio-headless.link/wp-content/uploads/2022/09/CesarMartel_FullStackDev_2022.pdf"}>
+                <Link href={cv}>
                     <a target={"_blank"} download><Button style={{marginLeft: "1rem"}}  withe>DOWNLOAD MY CV</Button> </a>
                 </Link>
 

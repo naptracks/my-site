@@ -15,7 +15,7 @@ import {
 //------|<views>
 //---------|<components>
 
-export const cv = "http://www.portfolio-headless.link/wp-content/uploads/2022/11/CesarMartel_CV2022_FullStackDev.pdf"
+export const cv = "http://www.portfolio-headless.link/wp-content/uploads/2022/11/CesarMartel_CV2022_FullStackDev-1.pdf"
 
 export const data = {
     home: {
